@@ -7,8 +7,6 @@
 }
 
 
-
-
 .Home {
   display: flex;
   align-items: center;
@@ -60,7 +58,7 @@ span {
   color: #FFFFFF;
   font-size: 18px;
   line-height: 25px;
-  letter-spacing: 0.5 px;
+  letter-spacing: 1px;
   text-align: justify;
 }
 
@@ -103,7 +101,7 @@ li a {
   text-decoration: none;
 }
 
-
+/* Change the link color to #111 (black) on hover */
 li a:hover:not(.active) {
   background-color: #425CCF;
 }
@@ -118,7 +116,6 @@ li a:hover:not(.active) {
   width: 500px ;
   opacity: 0.5 ;
 }
-
 
 
 
