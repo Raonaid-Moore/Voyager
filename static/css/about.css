@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")
+}
+
+ul {
+
+  list-style-type: none;
+
+  margin: 0;
+
+  padding: 0;
+
+  overflow: hidden;
+
+  background-color: #5E6CAB;
+
+}
+
+li {
+
+float: left;
+
+}
+
+li a {
+
+  display: block;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 20px 16px;
+
+  text-decoration: none;
+
+}
+
+
+li a:hover:not(.active) {
+
+  background-color: #425CCF;
+
+}
+
+.active {
+
+  background-color: #7B4BA5;
+
+}
+
+.about-us {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+  /*background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")*/
+}
+
+.pic {
+  height: auto;
+  width: 400px;
+  border-radius: 30px;
+}
+
+.about {
+  width: 1130px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ /*background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")*/
+}
+
+.text {
+  width: 540px;
+}
+
+.text h2 {
+  color: #7B4BA5;
+  font-size: 85px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")
+}
+
+.text h5 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")
+}
+
+span {
+  color: #7B4BA5;
+}
+
+.text p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")
+}
+
+.data {
+  margin-top: 30px;
+}
+/* button = hire */
+.hire {
+  font-size: 18px;
+  background: #5E6CAB;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+.hire:hover {
+  background: #425CCF;
+}
+
+
+.team1 {
+  width: 1400px;
+  max-width: 85%;
+  margin: 0 auto;
+  float: center;
+  align-items: right;
+  /* background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")*/
+
+
+}
+
+.text1 {
+     width: 540px;
+    align-items: center;
+
+}
+
+.team-pic {
+  float: right;
+  height: auto;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.text1 h2 {
+  color: #7B4BA5;
+  font-size: 85px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.text1 h5 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.about-us1 {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  padding: 90px 0;
+  justify-content: space-around;
+  margin: 0 auto;
+}
