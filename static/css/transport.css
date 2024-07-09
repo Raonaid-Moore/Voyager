@@ -1,106 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Transport to the Moon</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/transport.css">
-    <style>
-        body {
-            background-image: url('/static/images/space.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            color: white;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-        p {
-            background-color: rgba(255, 255, 255, 0.8);
-            color: black;
-            padding: 10px;
-            border-radius: 5px;
-            margin: 10px;
-        }
-        .content {
-            display: flex;
-            justify-content: space-around;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            padding: 20px;
-        }
-        .content img {
-            margin: 10px;
-            align-self: center;
-            max-width: 100%;
-            height: auto;
-        }
-        .content div {
-            flex: 1;
-            min-width: 300px;
-            margin: 10px;
-        }
-        h1, h2 {
-            margin: 20px;
-            color: white;
-            text-align: center;
-        }
-        footer {
-            margin-top: 20px;
-            text-align: center;
-            color: white;
-            padding: 10px 0;
-            background-color: rgba(0, 0, 0, 0.7);
-        }
-        .moon-car-section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            margin: 20px;
-        }
-        .moon-car-section img {
-            max-width: 250px;
-            height: auto;
-            margin: 10px;
-        }
-        .moon-car-section p {
-            flex: 1;
-            min-width: 300px;
-            background-color: rgba(255, 255, 255, 0.8);
-            color: black;
-            padding: 10px;
-            border-radius: 5px;
-            margin: 10px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Transport to the Moon</h1>
-    <div class="content">
-        <div>
-            <p>
-                Arriving at the Voyager Hotel on the Moon becomes an extraordinary experience with the advent of the futuristic Lunar Glide vehicle. This state-of-the-art spacecraft combines sleek design with advanced technology, effortlessly transitioning from Earth’s atmosphere into lunar space. Equipped with magnetic levitation drives and a robust ion propulsion system, the Lunar Glide offers a smooth, high-speed journey through space, complete with panoramic windows showcasing breathtaking cosmic vistas. Upon nearing the Moon, the vehicle elegantly descends and docks with the Voyager Hotel’s orbital landing platform. Guests disembark to a seamless transition into the hotel’s luxurious environment, all while marveling at the stunning lunar landscape that unfolds before them.
-            </p>
-        </div>
-        <img src="/static/images/rocket taking off.webp" alt="Rocket taking off">
-        <div>
-            <h2>What will take you to the Moon</h2>
-            <p>
-                The new advanced rocket ship, Stellar Voyager, revolutionizes lunar travel with its cutting-edge technology and unparalleled speed. Designed with a sleek, aerodynamic structure, the Stellar Voyager is equipped with powerful fusion engines that reduce the journey to the Moon to mere hours. Inside, the spacecraft offers luxurious cabins, state-of-the-art entertainment systems, and panoramic windows that provide breathtaking views of space. Its advanced navigation and safety systems ensure a smooth and secure trip, while eco-friendly propulsion minimizes the environmental impact. As passengers approach the Moon, they experience a seamless transition from high-speed travel to a gentle lunar landing, ready to explore the mysteries of the lunar surface.
-            </p>
-        </div>
-    </div>
+body {
+    background-image: url('/static/images/space.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+p {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.content img {
+    margin: 10px;
+    align-self: center;
+    max-width: 100%;
+    height: auto;
+}
+.content div {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+}
+h1, h2 {
+    margin: 20px;
+    color: white;
+    text-align: center;
+}
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.moon-car-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.moon-car-section img {
+    max-width: 250px;
+    height: auto;
+    margin: 10px;
+}
+.moon-car-section p {
+    flex: 1;
+    min-width: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+ ul {
 
-    <div class="moon-car-section">
-        <img src="/static/images/moon car.avif" alt="Moon car">
-        <p>
-            Upon your arrival to the moon on the Stellar Voyager aircraft, you are greeted by a robot-controlled car powered by solar energy. The new improved technology makes our vehicle go at speeds nearly as fast as light, and it only takes seconds to arrive at your hotel, 'The Voyager Hotel'.
-        </p>
-    </div>
+  list-style-type: none;
 
-    <footer>
-        &copy; 2024 Space Travel Inc. All rights reserved.
-    </footer>
-</body>
-</html>
+  margin: 0;
+
+  padding: 0;
+
+  overflow: hidden;
+
+  background-color: #5E6CAB;
+
+}
+
+li {
+
+float: left;
+
+}
+
+li a {
+
+  display: block;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 20px 16px;
+
+  text-decoration: none;
+
+}
+
+
+li a:hover:not(.active) {
+
+  background-color: #425CCF;
+
+}
+
+.active {
+
+  background-color: #7B4BA5;
+
+}
