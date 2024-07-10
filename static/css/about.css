@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")
+}
+
+/* Add styles for the dropdown menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5E6CAB;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #425CCF;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #425CCF}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*ul {
+
+  list-style-type: none;
+
+  margin: 0;
+
+  padding: 0;
+
+  overflow: hidden;
+
+  background-color: #5E6CAB;
+
+}
+
+li {
+
+float: left;
+
+}
+
+li a {
+
+  display: block;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 20px 16px;
+
+  text-decoration: none;
+
+}
+
+
+li a:hover:not(.active) {
+
+  background-color: #425CCF;
+
+}
+
+.active {
+
+  background-color: #7B4BA5;
+
+}*/
+
+.about-us {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+  /*background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")*/
+}
+
+.pic {
+  height: auto;
+  width: 400px;
+  border-radius: 30px;
+}
+
+.about {
+  width: 1130px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ /*background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")*/
+}
+
+.text {
+  width: 540px;
+}
+
+.text h2 {
+  color: #7B4BA5;
+  font-size: 85px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")
+}
+
+.text h5 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")
+}
+
+span {
+  color: #7B4BA5;
+}
+
+.text p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")
+}
+
+.data {
+  margin-top: 30px;
+}
+/* button = hire */
+.hire {
+  font-size: 18px;
+  background: #5E6CAB;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+.hire:hover {
+  background: #425CCF;
+}
+
+
+.team1 {
+  width: 1400px;
+  max-width: 85%;
+  margin: 0 auto;
+  float: center;
+  align-items: right;
+  /* background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")*/
+
+
+}
+
+.text1 {
+     width: 540px;
+    align-items: center;
+
+}
+
+.team-pic {
+  float: right;
+  height: auto;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.text1 h2 {
+  color: #7B4BA5;
+  font-size: 85px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.text1 h5 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.about-us1 {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  padding: 90px 0;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.hire {
+  float: center;
+  font-size: 18px;
+  background: #5E6CAB;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+.hire:hover {
+  background: #425CCF;
+}
+
+.data{
+  float: center;
+}

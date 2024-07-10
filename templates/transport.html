@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/transport.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+        body {
+            background-image: url('/static/images/space.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white; /* Ensure text is readable against the background */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        p {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .content img {
+            max-width: 300px;
+            height: auto;
+            margin: 10px;
+        }
+        .content div {
+            flex: 1;
+            min-width: 300px;
+        }
+        h1, h2 {
+            margin: 20px;
+            color: white; /* Ensure heading text is readable against the background */
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: white;
+        }
+        .moon-car-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .moon-car-section img {
+            max-width: 250px;
+            height: auto;
+            margin: 10px;
+        }
+        .moon-car-section p {
+            flex: 1;
+            min-width: 300px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .checklist {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .checklist ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .checklist li {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .checklist li i {
+            color: green;
+            margin-right: 10px;
+        }
+        .notice {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: red;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .notice p {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a class="active" href="home.html">Home</a></li>
+    <li><a href="#######">About</a></li>
+    <li><a href="transport.html">Travel</a></li>
+    <li><a href="#####">Book</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="accommodation.html">Accommodation</a></li>
+</ul>
+    <h1>Transport</h1>
+
+    <div class="content">
+        <div>
+            <p>
+                Arriving at the Voyager Hotel on the Moon becomes an extraordinary experience with the advent of the futuristic Lunar Glide vehicle. This state-of-the-art spacecraft combines sleek design with advanced technology, effortlessly transitioning from Earth’s atmosphere into lunar space. Equipped with magnetic levitation drives and a robust ion propulsion system, the Lunar Glide offers a smooth, high-speed journey through space, complete with panoramic windows showcasing breathtaking cosmic vistas. Upon nearing the Moon, the vehicle elegantly descends and docks with the Voyager Hotel’s orbital landing platform. Guests disembark to a seamless transition into the hotel’s luxurious environment, all while marveling at the stunning lunar landscape that unfolds before them.
+            </p>
+        </div>
+        <img src="/static/images/rocket taking off.webp" alt="Rocket taking off">
+    </div>
+
+    <h1>What will take you to the Moon</h1>
+    <div class="content">
+        <div>
+            <p>
+                The new advanced rocket ship, Stellar Voyager, revolutionizes lunar travel with its cutting-edge technology and unparalleled speed. Designed with a sleek, aerodynamic structure, the Stellar Voyager is equipped with powerful fusion engines that reduce the journey to the Moon to mere hours. Inside, the spacecraft offers luxurious cabins, state-of-the-art entertainment systems, and panoramic windows that provide breathtaking views of space. Its advanced navigation and safety systems ensure a smooth and secure trip, while eco-friendly propulsion minimizes the environmental impact. As passengers approach the Moon, they experience a seamless transition from high-speed travel to a gentle lunar landing, ready to explore the mysteries of the lunar surface.
+            </p>
+        </div>
+    </div>
+
+    <div class="moon-car-section">
+        <img src="/static/images/moon car.avif" alt="Moon car">
+        <p>
+            Upon landing on the moon, you'll be welcomed by the sleek, autonomous Lunar Rover 3000, a futuristic car designed for swift, comfortable lunar travel. This cutting-edge vehicle, powered entirely by solar energy, effortlessly glides over the moon's surface at remarkable speeds. With its advanced navigation system and plush interior, the Lunar Rover 3000 ensures a smooth, enjoyable ride, allowing you to relax and marvel at the breathtaking lunar landscape. In mere moments, you'll arrive at your destination, the luxurious Voyager Hotel, ready to begin your extraordinary stay on the moon.
+        </p>
+    </div>
+
+    <div class="checklist">
+        <h2>What should our passengers expect</h2>
+        <ul style="background-color:grey;">
+            <li><i class="fas fa-check-circle"></i> Always arrive on time</li>
+            <br><li><i class="fas fa-check-circle"></i> Guaranteed smooth flight</li>
+            <br><li><i class="fas fa-check-circle"></i> 5 star service while on board by our cabin crew </li>
+        </ul>
+    </div>
+
+    <div class="notice">
+        <p><strong>Notice:</strong> Bookings on transport can be refundable up until one week before your departure.</p>
+    </div>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+</body>
+</html>

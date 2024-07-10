@@ -1,0 +1,114 @@
+body {
+    background-image: url('/static/images/space.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+p {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.content img {
+    margin: 10px;
+    align-self: center;
+    max-width: 100%;
+    height: auto;
+}
+.content div {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+}
+h1, h2 {
+    margin: 20px;
+    color: white;
+    text-align: center;
+}
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.moon-car-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.moon-car-section img {
+    max-width: 250px;
+    height: auto;
+    margin: 10px;
+}
+.moon-car-section p {
+    flex: 1;
+    min-width: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+ ul {
+
+  list-style-type: none;
+
+  margin: 0;
+
+  padding: 0;
+
+  overflow: hidden;
+
+  background-color: #5E6CAB;
+
+}
+
+li {
+
+float: left;
+
+}
+
+li a {
+
+  display: block;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 20px 16px;
+
+  text-decoration: none;
+
+}
+
+
+li a:hover:not(.active) {
+
+  background-color: #425CCF;
+
+}
+
+.active {
+
+  background-color: #7B4BA5;
+
+}
