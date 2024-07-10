@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Booking Page</title>
+    <link rel="stylesheet" href="../static/css/activitiesPage.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book an Activity</h1>
+        <form action="http://127.0.0.1:5000/submit_booking" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="activity">Select Activity:</label>
+            <select id="activity" name="activity" required>
+                <option value="zero_gravity">Zero Gravity</option>
+                <option value="moon_walk">Moon Walk</option>
+                <option value="celestial_spa">Celestial Spa</option>
+                <option value="europa_splashdown">Europa Splashdown</option>
+                <option value="martian_rover_rally">Martian Rover Rally</option>
+                <option value="red_planet_cave_expedition">Red Planet Cave Expedition</option>
+            </select>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <input type="submit" value="Book Now">
+        </form>
+    </div>
+</body>
+</html>
