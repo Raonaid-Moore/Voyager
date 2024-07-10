@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/navbar.css">
     <link rel="stylesheet" href="../static/css/transport.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <style>
@@ -104,16 +104,72 @@
         .notice p {
             color: black;
         }
+        .booking {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .booking button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .booking button:hover {
+            background-color: #218838;
+        }
+        .price-table {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .price-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .price-table th, .price-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .price-table th {
+            background-color: #f2f2f2;
+            color: black;
+        }
+        .price-table tr:hover {
+            background-color: #ddd;
+        }
+        .price-table note {
+            display: block;
+            margin-top: 10px;
+            color: red;
+        }
     </style>
 </head>
 <body>
 <ul>
-    <li><a class="active" href="home.html">Home</a></li>
-    <li><a href="#######">About</a></li>
-    <li><a href="transport.html">Travel</a></li>
-    <li><a href="#####">Book</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="accommodation.html">Accommodation</a></li>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="transport.html">Travel</a></li>
+  <li><a href="#####">Booking</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li class="dropdown">
+    <a class="active" href="accommodation.html" class="dropbtn">Accommodation</a>
+    <div class="dropdown-content">
+      <a href="mars.html">Mars</a>
+      <a href="venus.html">Venus</a>
+      <a href="jupiter.html">Jupiter</a>
+      <a href="saturn.html">Saturn</a>
+    </div>
+  </li>
 </ul>
     <h1>Transport</h1>
 
@@ -153,6 +209,38 @@
 
     <div class="notice">
         <p><strong>Notice:</strong> Bookings on transport can be refundable up until one week before your departure.</p>
+    </div>
+
+    <div class="booking">
+        <h2>Ready to embark on your lunar adventure?</h2>
+        <button onclick="location.href='book.html'">Book Now Today</button>
+    </div>
+
+    <div class="price-table">
+        <h2>Prices</h2>
+        <table>
+            <tr>
+                <th>Destination</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Mars</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Venus</td>
+                <td>$125</td>
+            </tr>
+            <tr>
+                <td>Jupiter</td>
+                <td>$115</td>
+            </tr>
+            <tr>
+                <td>Saturn</td>
+                <td>$130</td>
+            </tr>
+        </table>
+        <note>Extra luggage bags are $10 each.</note>
     </div>
 
     <footer>
