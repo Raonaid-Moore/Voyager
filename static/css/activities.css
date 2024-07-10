@@ -122,7 +122,15 @@ font-family: "Poppins", sans-serif;
 .book{
 font-family: "Poppins", sans-serif;
 font-color: rgba(200,197,217);
+text-decoration: none;
+border: none;
+padding: 12px 25px
+border-radius: 6px;
+transition: 0.5s;
 }
+
+.book:hover {
+background: #425}
 
 .image-stack {
     display: flex;
