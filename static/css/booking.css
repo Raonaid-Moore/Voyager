@@ -2,13 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 10;
     padding: 20px;
-    background-color: #;
     text-align: center;
-    background-image: url("../static/images/istockphoto-1035676256-612x612.jpg");
+    background-image: url("../images/istockphoto-1035676256-612x612.jpg");
 }
 
 h1 {
-    color: #333;
+    color: #F2F5EA;
 }
 
 form {
