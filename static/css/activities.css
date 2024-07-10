@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F2F5EA;
+    background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png");
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+/* Add styles for the dropdown menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #111;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5E6CAB;
+}
+li {
+float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #425CCF;
+}
+.active {
+  background-color: #7B4BA5;
+}
+has context menu
+
+header {
+    /*background-color: #7B4BA5;*/
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    /*background-color: #7B4BA5; /* Change this color as needed */
+    color: #ffffff;
+    font-family: "Poppins", sans-serif
+
+
+}
+
+.header_style {
+ font-size: 50px;
+ text-align: left;
+}
+
+main {
+    padding: 20px;
+}
+
+.text {
+width: 1250px;
+color: white;
+font-family: "Poppins", sans-serif;
+background-color: rgba(97, 88, 161, 0.3);
+}
+
+.title {
+font-family: "Poppins", sans-serif;
+}
+
+.book{
+font-family: "Poppins", sans-serif;
+font-color: rgba(200,197,217);
+}
+
+.image-stack {
+    display: flex;
+    flex-direction: row; /* Change to column for vertical stacking */
+    align-items: center;
+}
+
+.stacked-image {
+    margin: 10px 0; /* Adjust margin as needed */
+    width: 418px; /* Adjust width as needed */
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+select {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #F2F5EA;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
