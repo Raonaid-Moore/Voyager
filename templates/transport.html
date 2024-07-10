@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/transport.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/transport.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <style>
         body {
             background-image: url('/static/images/space.png');
@@ -67,10 +69,54 @@
             border-radius: 5px;
             margin: 10px;
         }
+        .checklist {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .checklist ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .checklist li {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .checklist li i {
+            color: green;
+            margin-right: 10px;
+        }
+        .notice {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: red;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .notice p {
+            color: black;
+        }
     </style>
 </head>
 <body>
+<ul>
+    <li><a class="active" href="home.html">Home</a></li>
+    <li><a href="#######">About</a></li>
+    <li><a href="transport.html">Travel</a></li>
+    <li><a href="#####">Book</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="accommodation.html">Accommodation</a></li>
+</ul>
     <h1>Transport</h1>
+
     <div class="content">
         <div>
             <p>
@@ -96,8 +142,21 @@
         </p>
     </div>
 
-    <footer>
+    <div class="checklist">
+        <h2>What should our passengers expect</h2>
+        <ul style="background-color:grey;">
+            <li><i class="fas fa-check-circle"></i> Always arrive on time</li>
+            <br><li><i class="fas fa-check-circle"></i> Guaranteed smooth flight</li>
+            <br><li><i class="fas fa-check-circle"></i> 5 star service while on board by our cabin crew </li>
+        </ul>
+    </div>
 
+    <div class="notice">
+        <p><strong>Notice:</strong> Bookings on transport can be refundable up until one week before your departure.</p>
+    </div>
+
+    <footer>
+        <!-- Footer content -->
     </footer>
 </body>
 </html>
