@@ -1,0 +1,44 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+.right {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+img {
+    float: right;
+}
+
+.hire {
+  float: center;
+  font-size: 18px;
+  background: #5E6CAB;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+.hire:hover {
+  background: #425CCF;
+}
+
+.data{
+  float: center;
+}
+
+.text h1 {
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #F2F5EA;
+}
+
+
