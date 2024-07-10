@@ -5,6 +5,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 /* Add styles for the dropdown menu */
 ul {
@@ -155,6 +156,7 @@ background: #425}
 form {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 label {
