@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10;
+    padding: 20px;
+    background-color: #;
+    text-align: center;
+    background-image: url("../static/images/istockphoto-1035676256-612x612.jpg");
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    background: #F2F5EA;
+    padding: 30px;
+    border-radius: 66px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 12%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #F2F5EA;
+    color: #5E6CAB;
+    padding: 0px s0px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #555;
+}
