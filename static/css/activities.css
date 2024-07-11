@@ -5,7 +5,6 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 /* Add styles for the dropdown menu */
 ul {
@@ -144,14 +143,20 @@ background: #425}
     width: 418px; /* Adjust width as needed */
 }
 
+.booking_content {
+width: 500px;
+margin: 0 auto;
+}
 .container {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     max-width: 500px;
     width: 100%;
-}
+    box-sizing: border-box;
+    /*text-align: center;*/
+    }
 
 form {
     display: flex;
@@ -162,6 +167,7 @@ form {
 label {
     margin-bottom: 5px;
     font-weight: bold;
+    text-align: center;
 }
 
 input[type="text"],
@@ -171,23 +177,48 @@ input[type="date"],
 input[type="time"],
 select {
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-}
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    }
 
 input[type="submit"] {
-    padding: 10px;
+    padding: 15px;
     font-size: 18px;
     color: #fff;
-    background-color: #F2F5EA;
+    background-color: #7d6bb5;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #60538a;
+    text-align: center;
 }
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #7d6bb5;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #60538a;
+}
+
+
 

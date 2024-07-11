@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Room</title>
+    <link rel="stylesheet" href="../static/css/booking.css">
+    <style>
+    body {
+      background-image: url('../images/istockphoto-1035676256-612x612.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+
+    }
+    </style>
+</head>
+<body>
+    <h1>Book a Room</h1>
+
+    <form method="POST">
+
+            <label>Email: </label>
+            <input type="text" name="email" placeholder="Email Address"/>
+
+            <label>Check In: </label>
+            <input type="text" name="check_in" placeholder="Check In"/>
+
+            <label>Check Out: </label>
+            <input type="text" name="check_out" placeholder="Check Out"/>
+
+            <label>Room Type: </label>
+            <input type="text" name="room_type" placeholder="Room Type"/>
+
+            <label></label>
+            <input type="submit" value="Book Room">
+
+    </form>
+</body>
+</html>
