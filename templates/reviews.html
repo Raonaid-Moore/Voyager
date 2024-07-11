@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="reviews-container">
+        <h1>Hotel Reviews</h1>
+
+        <div class="review-form">
+            <h2>Add Your Review</h2>
+            <form id="add-review-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="1">★☆☆☆☆</option>
+                </select>
+
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+
+        <div class="review">
+            <div class="review-header">
+                <div class="reviewer-details">
+                    <h2>John Doe</h2>
+                    <p>Reviewed on July 1, 2024</p>
+                </div>
+                <div class="review-rating">
+                    ★★★★☆
+                </div>
+            </div>
+            <p class="review-text">
+                The hotel was fantastic! Great service and clean rooms. The location was perfect, close to everything.
+            </p>
+        </div>
+
+        <div class="review">
+            <div class="review-header">
+                <div class="reviewer-details">
+                    <h2>Jane Smith</h2>
+                    <p>Reviewed on June 28, 2024</p>
+                </div>
+                <div class="review-rating">
+                    ★★★☆☆
+                </div>
+            </div>
+            <p class="review-text">
+                Good hotel overall, but the breakfast options could be improved. Staff was friendly and helpful.
+            </p>
+        </div>
+        <!-- Add more reviews.js as needed -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
