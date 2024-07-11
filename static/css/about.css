@@ -8,7 +8,8 @@
 }
 
 body {
-  background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")
+  background-color:  #F2F5EA
+  /*background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")*/
 }
 
 /* Add styles for the dropdown menu */
@@ -144,15 +145,15 @@ li a:hover:not(.active) {
   font-size: 85px;
   font-weight: 600;
   margin-bottom: 10px;
-  background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")
+  /*background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")*/
 }
 
 .text h5 {
-  color: #fff;
+  color: #000;
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
-  background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")
+  /*background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")*/
 }
 
 span {
@@ -160,31 +161,17 @@ span {
 }
 
 .text p {
-  color: #fff;
+  color: #000;
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 1px;
-  background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")
+  /*background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")*/
 }
 
 .data {
   margin-top: 30px;
 }
 /* button = hire */
-.hire {
-  font-size: 18px;
-  background: #5E6CAB;
-  color: #fff;
-  text-decoration: none;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 6px;
-  transition: 0.5s;
-}
-
-.hire:hover {
-  background: #425CCF;
-}
 
 
 .team1 {
@@ -219,14 +206,14 @@ span {
 }
 
 .text1 h5 {
-  color: #fff;
+  color: #000;
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
 .about-us1 {
-  color: #fff;
+  color: #000;
   display: flex;
   align-items: center;
   height: 100vh;
@@ -250,13 +237,20 @@ span {
   color: #fff;
   text-decoration: none;
   border: none;
-  padding: 12px 25px;
-  border-radius: 6px;
+  padding: 15px 25px;
+  border-radius: 15px;
   transition: 0.5s;
+  box-shadow: 0 9px  #999;
 }
-
+/*
 .hire:hover {
   background: #425CCF;
+}*/
+
+.hire:active {
+  Background-color:  #425CCF;
+  box-shadow: 0 5px  #666;
+  transform: translateY(4px)
 }
 
 .data{
