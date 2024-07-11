@@ -13,7 +13,6 @@
   height: 100vh;
   width: 100%;
   padding: 90px 0;
-  background color: #F2F5EA
 }
 
 .pic {
@@ -45,7 +44,7 @@
 }
 
 .text h5 {
-  color: black;
+  color: #FFFFFF;
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
@@ -57,7 +56,7 @@ span {
 }
 
 .text p {
-  color: black;
+  color: #FFFFFF;
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 0.5px;
@@ -93,7 +92,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #5E6CAB;
 }
 
 li {
@@ -109,7 +108,7 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-  background-color: #111;
+  background-color: #425CCF;
 }
 
 .dropdown {
@@ -119,14 +118,14 @@ li a:hover, .dropdown:hover .dropbtn {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #111;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
+  color: #5E6CAB ;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -161,37 +160,68 @@ li a:hover:not(.active) {
   margin-right: 150px;
 }
 
-/* carousel of images */
+
+body, html {
+    background-color: #F2F5EA; /* Example background color for the entire page */
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    display: flex;
+    justify-content: flex-end; /* Align carousel to the right */
+    padding: 50px; /* Optional padding around the page */
+}
+
+.carousel-wrapper {
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    background-color: #5E6CAB;
+    padding: 20px;
+}
 
 .carousel {
-    position: center;
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50px;
+    max-width: 100%;
+    padding-top: 20px;
     overflow: hidden;
+    position: relative;
 }
 
 .carousel-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width: 100%
 }
 
 .carousel-slide {
     min-width: 100%;
-    height: auto;
-
     box-sizing: border-box;
-
 }
 
 .carousel-slide img {
-    width: 100% ;
-    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
 
+.carousel-control.prev {
+    left: 10px;
+}
 
+.carousel-control.next {
+    right: 10px;
+}
 
 
 
