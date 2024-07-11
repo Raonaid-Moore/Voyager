@@ -13,7 +13,7 @@
   height: 100vh;
   width: 100%;
   padding: 90px 0;
-  background-image: url("https://i.natgeofe.com/n/e484088d-3334-4ab6-9b75-623f7b8505c9/1086.jpg")
+  background color: #F2F5EA
 }
 
 .pic {
@@ -45,7 +45,7 @@
 }
 
 .text h5 {
-  color: #FFFFFF;
+  color: black;
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
@@ -57,7 +57,7 @@ span {
 }
 
 .text p {
-  color: #FFFFFF;
+  color: black;
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 0.5px;
