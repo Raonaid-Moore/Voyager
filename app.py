@@ -11,7 +11,7 @@ def submit_booking():
     date = request.form['date']
     time = request.form['time']
     # Process the booking (e.g., save to a database)
-    return f"Booking received for {name} to {activity} on {date} at {time}."
+    return f"Booking received for {name} to {activity} on {date} at {time}, under {email} and {phone}."
 
 if __name__ == '__main__':
     app.run(debug=True)
