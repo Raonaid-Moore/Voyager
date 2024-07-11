@@ -4,87 +4,115 @@
     <meta charset="UTF-8">
     <title>Fun Facts</title>
     <link rel="stylesheet" href="../static/css/funfacts.css" />
-    <style>
-        body {
-            background-color: black;
-            color: #F2F5EA;
-            font-family: sans-serif;
-        }
-        h1 {
-            font-size: 60px;
-            text-align: center;
-            color: #7B4BA5;
-        }
-        .fact {
-            margin-bottom: 40px;
-        }
-        .fact-title {
-            font-size: 30px;
-            text-align: left;
-        }
-        .fact-content {
-            font-size: 20px;
-            text-align: left;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .fact-content img {
-            margin-left: 20px;
-            width: 200px;
-            height: 200px;
-        }
-        .large-img img {
-            width: 800px;
-            height: 800px;
-        }
-        .data {
-            text-align: center;
-            margin-top: 50px;
-        }
-        a.hire {
-            color: #7B4BA5;
-            text-decoration: none;
-            font-size: 20px;
-            position: relative;
-            padding: 10px 20px;
-            background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
-            border: 2px solid #7B4BA5;
-            border-radius: 30px;
-            display: inline-block;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-        a.hire:before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 10.01%);
-            background-size: 10px 10px;
-            animation: animate 5s linear infinite;
-            transition: all 0.3s ease;
-        }
-        a.hire:hover {
-            color: #ffffff;
-            background: linear-gradient(135deg, #4e4376 0%, #2b5876 100%);
-            border-color: #ffffff;
-        }
-        a.hire:hover:before {
-            background: radial-gradient(circle, rgba(255,255,255,0.2) 10%, transparent 10.01%);
-        }
-        @keyframes animate {
-            0% {
-                transform: translateX(0) translateY(0);
-            }
-            100% {
-                transform: translateX(50px) translateY(50px);
-            }
-        }
-    </style>
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+    body {
+        background: linear-gradient(to bottom, #000022, #000033, #000044);
+        color: #F2F5EA;
+        font-family: 'Orbitron', sans-serif;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        font-size: 60px;
+        text-align: center;
+        color: #7B4BA5;
+        margin-top: 20px;
+        text-shadow: 0 0 10px rgba(123, 75, 165, 0.5), 0 0 20px rgba(123, 75, 165, 0.3);
+        animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+        0% {
+            text-shadow: 0 0 10px rgba(123, 75, 165, 0.5), 0 0 20px rgba(123, 75, 165, 0.3);
+        }
+        100% {
+            text-shadow: 0 0 20px rgba(123, 75, 165, 0.7), 0 0 30px rgba(123, 75, 165, 0.5), 0 0 40px rgba(123, 75, 165, 0.3);
+        }
+    }
+    .fact {
+        margin: 40px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+    .fact-title {
+        font-size: 30px;
+        text-align: left;
+        color: #425CCF;
+    }
+    .fact-content {
+        font-size: 20px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .fact-content img {
+        margin-left: 20px;
+        width: 200px;
+        height: 200px;
+        border: 2px solid #FFD700;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .fact-content img:hover {
+        transform: scale(1.4);
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+    }
+    .large-img img {
+        width: 800px;
+        height: 800px;
+    }
+    .data {
+        text-align: center;
+        margin-top: 50px;
+    }
+    a.hire {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+        padding: 10px 20px;
+        background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+        border: 2px solid #FFD700;
+        border-radius: 30px;
+        display: inline-block;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+    a.hire:before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 10.01%);
+        background-size: 10px 10px;
+        animation: animate 5s linear infinite;
+        transition: all 0.3s ease;
+    }
+    a.hire:hover {
+        color: #FFD700;
+        background: linear-gradient(135deg, #4e4376 0%, #2b5876 100%);
+        border-color: #FFD700;
+    }
+    a.hire:hover:before {
+        background: radial-gradient(circle, rgba(255,255,255,0.2) 10%, transparent 10.01%);
+    }
+    @keyframes animate {
+        0% {
+            transform: translateX(0) translateY(0);
+        }
+        100% {
+            transform: translateX(50px) translateY(50px);
+        }
+    }
+</style>
 <body>
 <h1>Fun Facts</h1>
 <div id="content">
@@ -153,7 +181,9 @@
     </div>
 
     <div class="fact">
-        <p class="fact-title"><b>Pluto is smaller than the United States.</b></p>
+        <p
+
+ class="fact-title"><b>Pluto is smaller than the United States.</b></p>
         <div class="fact-content">
             <span>If you were to walk around the equator of Pluto it would be the same distance as walking from London to Denver.</span>
             <img src="/static/images/pluto.jpg" alt="pluto" class="large-img">
@@ -179,9 +209,7 @@
     <div class="fact">
         <p class="fact-title"><b>Moon Museum</b></p>
         <div class="fact-content">
-            <span>Exhibits in the museum include: Historical Artifacts: Displays artifacts from various moon missions, including tools, space suits, lunar modules from the Apollo, Artemis, and international missions
-
- and the famous american flag.<br>Lunar Geology: Features a vast collection of moon rocks and soil samples, with interactive displays explaining their composition and history.<br>Space Technology: Showcases the evolution of space travel technology, from early rockets to advanced spacecraft and rovers.<br>Virtual Reality Experiences: Offers VR experiences that allow visitors to relive historic moon missions and explore the lunar surface in detail.</span>
+            <span>Exhibits in the museum include: Historical Artifacts: Displays artifacts from various moon missions, including tools, space suits, lunar modules from the Apollo, Artemis, and international missions and the famous american flag.<br>Lunar Geology: Features a vast collection of moon rocks and soil samples, with interactive displays explaining their composition and history.<br>Space Technology: Showcases the evolution of space travel technology, from early rockets to advanced spacecraft and rovers.<br>Virtual Reality Experiences: Offers VR experiences that allow visitors to relive historic moon missions and explore the lunar surface in detail.</span>
             <img src="/static/images/moon_museum.png" alt="museum" class="large-img">
         </div>
     </div>
@@ -192,3 +220,4 @@
 </div>
 </body>
 </html>
+
