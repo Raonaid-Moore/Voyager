@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="../static/css/transport.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <style>
+
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
         body {
             background-color: #5E6CAB;
             background-size: cover;
@@ -15,7 +23,7 @@
             color: #FFFFFF;
             margin: 0;
             padding: 0;
-            font-family: 'Arial', Roboto Condensed;
+            font-family: 'Arial', "Poppins", sans serif;
             font-size: 18px;
         }
         p {
@@ -45,14 +53,14 @@
         }
         h1, h2 {
             margin: 20px;
-            color: #F2F5EA;
+            color: #425CCF;
             text-shadow: 2px 2px 4px #000;
             font-size: 24px;
         }
         footer {
             margin-top: 30px;
             text-align: center;
-            color: #7B4BA5;
+            color: #000000;
             font-size: 20px;
         }
         .moon-car-section {
@@ -99,7 +107,7 @@
             align-items: center;
         }
         .checklist li i {
-            color: #536CAB;
+            color: #FFF;
             margin-right: 10px;
         }
         .notice {
