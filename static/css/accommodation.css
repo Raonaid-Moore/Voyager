@@ -1,6 +1,6 @@
 .container {
  display: grid;
- align-items: center;
+ align-items: right;
  grid-template-columns: 1fr 1fr 1fr;
  column-gap: 5px;
 }
@@ -23,8 +23,7 @@ img {
   padding-left: 20px;
 }
 
-body{
-    background-image: url("../image/galaxy.png");
+
 }
 <style>
 div.gallery {
