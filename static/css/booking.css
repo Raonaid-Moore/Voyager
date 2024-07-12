@@ -24,9 +24,10 @@ label {
 }
 
 input, select {
-    width: 12%;
+    width: 30%;
     padding: 8px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 button {
@@ -47,7 +48,7 @@ width: 500px;
 margin: 0 auto;
 }
 .container {
-    background-color: #fff;
+    background-color: #5E6CAB;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -87,8 +88,8 @@ select {
 input[type="submit"] {
     padding: 15px;
     font-size: 18px;
-    color: #fff;
-    background-color: #7D6BB5;
+    color: #F2F5EA;
+    background-color: #7B4BA5;
     border: none;
     border-radius: 5px;
     cursor: pointer;
