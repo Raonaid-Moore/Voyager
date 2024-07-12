@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #F2F5EA;
-    background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png");
     color: #333;
     margin: 0;
     padding: 0;
@@ -88,13 +87,14 @@ header {
     /*background-color: #7B4BA5;*/
     color: #ffffff;
     padding: 10px 0;
-    text-align: center;
 }
 
 h1 {
     /*background-color: #7B4BA5; /* Change this color as needed */
-    color: #ffffff;
-    font-family: "Poppins", sans-serif
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(97, 88, 161, 0.3);
+    text-align: left;
 
 
 }
@@ -108,11 +108,10 @@ main {
     padding: 20px;
 }
 
-.text {
+.words {
 width: 1250px;
-color: white;
+color: black;
 font-family: "Poppins", sans-serif;
-background-color: rgba(97, 88, 161, 0.3);
 }
 
 .title {
@@ -129,8 +128,7 @@ border-radius: 6px;
 transition: 0.5s;
 }
 
-.book:hover {
-background: #425}
+
 
 .image-stack {
     display: flex;
@@ -208,7 +206,7 @@ input[type="submit"]:hover {
     padding: 15px 25px;
     font-size: 16px;
     color: #fff;
-    background-color: #7d6bb5;
+    background-color: #7868ab;
     border: none;
     border-radius: 5px;
     text-decoration: none;
@@ -219,6 +217,19 @@ input[type="submit"]:hover {
 .button:hover {
     background-color: #60538a;
 }
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+
 
 
 
