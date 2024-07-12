@@ -89,33 +89,31 @@ header {
     padding: 10px 0;
 }
 
-h1 {
-    /*background-color: #7B4BA5; /* Change this color as needed */
-    color: #000;
-    font-family: "Poppins", sans-serif;
-    background-color: rgba(97, 88, 161, 0.3);
-    text-align: left;
-
-
-}
-
 .header_style {
  font-size: 50px;
  text-align: left;
+ background-color: rgba(97, 88, 161)
+ color: white
 }
 
 main {
     padding: 20px;
 }
 
-.words {
+.text {
 width: 1250px;
-color: black;
 font-family: "Poppins", sans-serif;
+color: black;
+text-align: left;
 }
+
+h1{
+color: rgba(97, 88, 161)
+ }
 
 .title {
 font-family: "Poppins", sans-serif;
+text-align: left;
 }
 
 .book{
@@ -145,6 +143,7 @@ transition: 0.5s;
 width: 500px;
 margin: 0 auto;
 }
+
 .container {
     background-color: #fff;
     padding: 30px;
