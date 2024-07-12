@@ -67,6 +67,7 @@ span {
   margin-top: 30px;
 }
 
+
 /*read more button*/
 
 .hire {
@@ -84,9 +85,8 @@ span {
   background: #425CCF;
 }
 
-/*nav bar*/
+/*navbar*/
 
-/* Add styles for the dropdown menu */
 ul {
   list-style-type: none;
   margin: 0;
@@ -146,6 +146,7 @@ li a:hover:not(.active) {
 .active {
   background-color: #7B4BA5;
 }
+
 /*image on home page*/
 
 .p1 {
@@ -169,9 +170,37 @@ body, html {
 
 .page-wrapper {
     display: flex;
-    justify-content: flex-end; /* Align carousel to the right */
-    padding: 50px; /* Optional padding around the page */
+    justify-content: centre; /* Align carousel to the right */
+    padding: 20px; /* Optional padding around the page */
 }
+
+.content-wrapper {
+    display: flex; /* Use flexbox to position text and carousel side by side */
+    width: 100%; /* Adjust width as needed */
+    max-width: 1200px; /* Optional max width for the content area */
+    justify-content: flex-end; /* Align the content to the right */
+}
+
+/* Text content styling */
+.text-content {
+    width: 30%; /* Adjust the width of the text container */
+    padding: 20px; /* Optional padding inside the text container */
+    background-color: #f0f0f0; /* Optional background color for the text area */
+    margin-right: 100px; /* Add margin to separate it from the carousel */
+}
+
+.text-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    text-align : justify;
+}
+
 
 .carousel-wrapper {
     width: 50%;
@@ -179,13 +208,14 @@ body, html {
     position: relative;
     background-color: #5E6CAB;
     padding: 20px;
+    margin-left: 40px;
 }
 
 .carousel {
     max-width: 100%;
-    padding-top: 20px;
     overflow: hidden;
     position: relative;
+    padding-top: 10px;
 }
 
 .carousel-container {
@@ -222,6 +252,3 @@ body, html {
 .carousel-control.next {
     right: 10px;
 }
-
-
-
