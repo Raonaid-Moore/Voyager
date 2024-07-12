@@ -15,7 +15,7 @@
             color: #425CCF;
             margin: 0;
             padding: 0;
-            font-family: "Poppins", sans-serif;
+            font-family: 'Arial', sans-serif;
         }
         p {
             background-color: rgba(255, 255, 255, 0.8);
@@ -23,20 +23,20 @@
             padding: 15px;
             border-radius: 10px;
             margin: 15px;
-            font-size: 20px;
+            font-size: 30px;
         }
         .content {
             display: flex;
             justify-content: space-around;
-            align-items: stretch;
+            align-items: flex-start;
             flex-wrap: wrap;
             margin: 20px 0;
         }
         .content img {
-            max-width: 600px;
+            max-width: 350px;
+            height: auto;
             margin: 15px;
             border-radius: 10px;
-            object-fit: cover;
         }
         .content div {
             flex: 1;
@@ -45,7 +45,7 @@
         }
         h1, h2 {
             margin: 20px;
-            color: #7B4BA5;
+            color: #F2F5EA;
             text-shadow: 2px 2px 4px #000;
             font-size: 40px;
         }
@@ -57,13 +57,13 @@
         .moon-car-section {
             display: flex;
             justify-content: center;
-            align-items: stretch;
+            align-items: center;
             flex-wrap: wrap;
             margin: 20px 0;
         }
         .moon-car-section img {
             max-width: 250px;
-            height: 100%;
+            height: auto;
             margin: 15px;
             border-radius: 10px;
         }
@@ -79,31 +79,37 @@
         .checklist {
             margin: 20px;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: #F5F5DC; /* Cream background */
+            color: black;
             border-radius: 10px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            color: black; /* Black writing */
+
         }
         .checklist ul {
             padding: 0;
             margin: 0;
-            list-style: none;
+            list-style:none;
+
         }
         .checklist li {
             margin: 10px 0;
             display: flex;
-            align-items: center;
+            align-items: left;
+            background-color:white;
         }
         .checklist li i {
-            color: green; /* Keep green for the check marks */
+            color: green;
             margin-right: 10px;
+            display: inline-block; /* Ensure they stay aligned vertically */
         }
         .notice {
             margin: 20px;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            color: red;
+            background-color: white
+            color: blue;
             border-radius: 10px;
             text-align: center;
         }
@@ -113,13 +119,13 @@
         .booking {
             margin: 20px;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: white
             color: black;
             border-radius: 10px;
             text-align: center;
         }
         .booking button {
-            background-color: #007bff; /* Changed to blue */
+            background-color: #5E6CAB;
             color: white;
             padding: 15px 30px;
             border: none;
@@ -129,13 +135,13 @@
             transition: background-color 0.3s;
         }
         .booking button:hover {
-            background-color: #0056b3; /* Changed to blue */
+            background-color: #425CCF;
         }
         .price-table {
             margin: 20px;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.9);
-            color: black;
+            color: white;
             border-radius: 10px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -151,8 +157,8 @@
             text-align: left;
         }
         .price-table th {
-            background-color: #007bff; /* Changed to blue */
-            color: 425CFF;
+            background-color: #5E6CAB;
+            color: white;
             font-weight: bold;
             text-align: center;
         }
@@ -164,7 +170,7 @@
         }
         .price-table .note {
             margin-top: 10px;
-            color: red;
+            color: blue;
             font-size: 1em;
         }
         ul.navbar {
@@ -216,13 +222,13 @@
 </head>
 <body>
 <ul class="navbar">
-  <li><a  href="index.html">Home</a></li>
+  <li><a class="active" href="index.html">Home</a></li>
   <li><a href="about.html">About</a></li>
-  <li><a class="active" href="transport.html">Transport</a></li>
-  <li><a href="activitiesPage.html">Activities</a></li>
+  <li><a href="transport.html">Travel</a></li>
+  <li><a href="#####">Booking</a></li>
   <li><a href="contact.html">Contact</a></li>
   <li class="dropdown">
-    <a  href="accommodation.html" class="dropbtn">Accommodation</a>
+    <a class="active" href="accommodation.html" class="dropbtn">Accommodation</a>
     <div class="dropdown-content">
       <a href="mars.html">Mars</a>
       <a href="venus.html">Venus</a>
@@ -232,17 +238,16 @@
   </li>
 </ul>
 
+
     <h1>Transport</h1>
 
     <div class="content">
-        <div class="text-container">
+        <div>
             <p>
-           Traveling aboard a futuristic spaceship to visit the Voyager Hotel on four different planets is a truly exhilarating experience. Begin your journey at Saturn, where the spaceship effortlessly maneuvers through its magnificent rings before docking at the Voyager Hotel, offering breathtaking views of the planet’s shimmering bands. Next, soar towards Venus, where the spaceship descends through its thick, golden clouds to reach the Voyager Hotel, nestled in a floating paradise amidst the planet’s atmospheric beauty. On Mars, the spaceship lands in the red dust, transporting you to the Voyager Hotel, strategically placed to offer panoramic views of the Martian landscape and ancient valleys. Finally, journey to Jupiter, where the spaceship approaches the Voyager Hotel orbiting above the gas giant, providing stunning vistas of its swirling storm systems and vibrant cloud layers. Each planetary stop at the Voyager Hotel offers a unique blend of luxury and cosmic wonder, making for an unforgettable interplanetary adventure.
+                Arriving at the Voyager Hotel on the Moon becomes an extraordinary experience with the advent of the futuristic Lunar Glide vehicle. This state-of-the-art spacecraft combines sleek design with advanced technology, effortlessly transitioning from Earth’s atmosphere into lunar space. Equipped with magnetic levitation drives and a robust ion propulsion system, the Lunar Glide offers a smooth, high-speed journey through space, complete with panoramic windows showcasing breathtaking cosmic vistas. Upon nearing the Moon, the vehicle elegantly descends and docks with the Voyager Hotel’s orbital landing platform. Guests disembark to a seamless transition into the hotel’s luxurious environment, all while marveling at the stunning lunar landscape that unfolds before them.
             </p>
         </div>
-        <div class="image-container">
-            <img src="/static/images/rocket taking off.webp" alt="Rocket taking off">
-        </div>
+        <img src="/static/images/rocket taking off.webp" alt="Rocket taking off">
     </div>
 
 <div class="text3 " >
@@ -265,11 +270,12 @@
     </div>
 
     <div class="checklist">
+        <style></style>
         <h2>What should our passengers expect</h2>
         <ul>
-            <li><i class="fas fa-check-circle"></i> Always arrive on time</li>
-            <li><i class="fas fa-check-circle"></i> Guaranteed smooth flight</li>
-            <li><i class="fas fa-check-circle"></i> 5 star service while on board by our cabin crew</li>
+            <li><i class="fas fa-check-circle"></i> Always arrive on time          .</li>
+            <li><i class="fas fa-check-circle"></i> Guaranteed smooth flight          .</li>
+            <li><i class="fas fa-check-circle"></i> 5 star service while on board by our cabin crew             .</li>
         </ul>
     </div>
 
@@ -297,8 +303,7 @@
                 </tr>
                 <tr>
                     <td>Venus</td>
-                    <td>$125</td>
-                </tr>
+                    <td>$125</tr>
                 <tr>
                     <td>Jupiter</td>
                     <td>$115</td>
