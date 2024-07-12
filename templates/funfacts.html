@@ -4,191 +4,227 @@
     <meta charset="UTF-8">
     <title>Fun Facts</title>
     <link rel="stylesheet" href="../static/css/funfacts.css" />
-    <style>
-        body {
-            background-color: black;
-            color: #F2F5EA;
-            font-family: sans-serif;
-        }
-        h1 {
-            font-size: 60px;
-            text-align: center;
-            color: #7B4BA5;
-        }
-        .fact {
-            margin-bottom: 40px;
-        }
-        .fact-title {
-            font-size: 30px;
-            text-align: left;
-        }
-        .fact-content {
-            font-size: 20px;
-            text-align: left;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .fact-content img {
-            margin-left: 20px;
-            width: 200px;
-            height: 200px;
-        }
-        .large-img img {
-            width: 800px;
-            height: 800px;
-        }
-        .data {
-            text-align: center;
-            margin-top: 50px;
-        }
-        a.hire {
-            color: #7B4BA5;
-            text-decoration: none;
-            font-size: 20px;
-            position: relative;
-            padding: 10px 20px;
-            background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
-            border: 2px solid #7B4BA5;
-            border-radius: 30px;
-            display: inline-block;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-        a.hire:before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 10.01%);
-            background-size: 10px 10px;
-            animation: animate 5s linear infinite;
-            transition: all 0.3s ease;
-        }
-        a.hire:hover {
-            color: #ffffff;
-            background: linear-gradient(135deg, #4e4376 0%, #2b5876 100%);
-            border-color: #ffffff;
-        }
-        a.hire:hover:before {
-            background: radial-gradient(circle, rgba(255,255,255,0.2) 10%, transparent 10.01%);
-        }
-        @keyframes animate {
-            0% {
-                transform: translateX(0) translateY(0);
-            }
-            100% {
-                transform: translateX(50px) translateY(50px);
-            }
-        }
-    </style>
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+    body {
+        background: linear-gradient(to bottom, #000022, #000033, #000044);
+        color: #F2F5EA;
+        font-family: 'Orbitron', sans-serif;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        font-size: 60px;
+        text-align: center;
+        color: #7B4BA5;
+        margin-top: 20px;
+        text-shadow: 0 0 10px rgba(123, 75, 165, 0.5), 0 0 20px rgba(123, 75, 165, 0.3);
+        animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+        0% {
+            text-shadow: 0 0 10px rgba(123, 75, 165, 0.5), 0 0 20px rgba(123, 75, 165, 0.3);
+        }
+        100% {
+            text-shadow: 0 0 20px rgba(123, 75, 165, 0.7), 0 0 30px rgba(123, 75, 165, 0.5), 0 0 40px rgba(123, 75, 165, 0.3);
+        }
+    }
+    .fact {
+        margin: 40px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+    .fact-title {
+        font-size: 30px;
+        text-align: left;
+        color: #425CCF;
+    }
+    .fact-content {
+        font-size: 20px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .fact-content img {
+        margin-left: 20px;
+        width: 200px;
+        height: 200px;
+        border: 2px solid #FFD700;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .fact-content img:hover {
+        transform: scale(1.4);
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+    }
+    .large-img img {
+        width: 800px;
+        height: 800px;
+    }
+    .data {
+        text-align: center;
+        margin-top: 50px;
+    }
+    a.hire {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+        padding: 10px 20px;
+        background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+        border: 2px solid #FFD700;
+        border-radius: 30px;
+        display: inline-block;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+    a.hire:before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 10.01%);
+        background-size: 10px 10px;
+        animation: animate 5s linear infinite;
+        transition: all 0.3s ease;
+    }
+    a.hire:hover {
+        color: #FFD700;
+        background: linear-gradient(135deg, #4e4376 0%, #2b5876 100%);
+        border-color: #FFD700;
+    }
+    a.hire:hover:before {
+        background: radial-gradient(circle, rgba(255,255,255,0.2) 10%, transparent 10.01%);
+    }
+    @keyframes animate {
+        0% {
+            transform: translateX(0) translateY(0);
+        }
+        100% {
+            transform: translateX(50px) translateY(50px);
+        }
+    }
+    .button-container {
+        text-align: center;
+        margin: 20px;
+    }
+</style>
 <body>
-<h1>Fun Facts</h1>
-<div id="content">
-    <div class="fact">
-        <p class="fact-title"><b>First earthling in space</b></p>
-        <div class="fact-content">
-            <span>The first earthling to orbit our planet was just two years old, plucked from the streets of Moscow barely more than a week before her historic launch.<br>Her name was Laika. She was a terrier mutt and by all accounts a good dog.<br>Her 1957 flight paved the way for space exploration back when scientists did not know if spaceflight was lethal for living things.</span>
-            <img src="/static/images/Laika.jpg" alt="Laika">
+    <div class="button-container">
+        <h1>Fun Facts</h1>
+        <a href="about.html" class="hire">Return to About Page</a>
+    </div>
+    <div id="content">
+        <div class="fact">
+            <p class="fact-title"><b>First earthling in space</b></p>
+            <div class="fact-content">
+                <span>The first earthling to orbit our planet was just two years old, plucked from the streets of Moscow barely more than a week before her historic launch.<br>Her name was Laika. She was a terrier mutt and by all accounts a good dog.<br>Her 1957 flight paved the way for space exploration back when scientists did not know if spaceflight was lethal for living things.</span>
+                <img src="/static/images/Laika.jpg" alt="Laika">
+            </div>
+        </div>
+
+        <div class="fact">
+            <p class="fact-title"><b>Flag on the moon</b></p>
+            <div class="fact-content">
+                <span>Aldrin and fellow Moon-walker Neil Armstrong planted the flag just 27 feet from the centerline of the lunar lander.<br>The flagpole did not withstand the rocket exhaust of liftoff. Subsequent missions placed the flag farther from the lander to ensure they remained upright.</span>
+                <img src="/static/images/flag.jpg" alt="Flag" class="large-img">
+            </div>
+        </div>
+
+        <div class="fact">
+            <p class="fact-title"><b>Space tourism</b></p>
+            <div class="fact-content">
+                <span>Space tourism is beginning to gain traction thanks to companies like Virgin Galactic and Blue Origin offering public suborbital rides<br>In 2021, Blue Origin’s New Shepard carried Jeff Bezos and three other passengers to the edge of space.</span>
+                <img src="/static/images/spaceship.jpg" alt="spaceship" class="large-img">
+            </div>
+        </div>
+
+        <div class="fact">
+            <p class="fact-title"><b>Cost of space travel</b></p>
+            <div class="fact-content">
+                <span>Space Travel is wildly expensive. Orbital Science's Cygnus spacecraft's cargo costs about $43,180 per pound of cargo, and SpaceX's new carriers about $27,000 per pound.<br>We have determined that a 16-ounce bottle of water can cost anywhere between $9,100 to $43,180 to blast into space.</span>
+                <img src="/static/images/money.png" alt="money" class="large-img">
+            </div>
+        </div>
+
+        <div class="fact">
+            <p class="fact-title"><b>Space travel is slow</b></p>
+            <div class="fact-content">
+                <span>Based on past missions, we know that it usually takes about three days for a manned spacecraft to reach the moon<br>The average distance from Earth to the moon is 240,000 miles (386,243 kilometers).<br>This translates to a spacecraft's speed of about 3,333 mph (5,364 kph).</span>
+                <img src="/static/images/slow.jpg" alt="slow" class="large-img">
+            </div>
+        </div>
+
+        <div class="fact">
+            <p class="fact-title"><b>Space is cold</b></p>
+            <div class="fact-content">
+                <span>The temperature in the void of space is about −270.45 °C. Space is a hard vacuum, meaning it is a void containing very little matter.</span>
+                <img src="/static/images/cold.jpg" alt="cold" class="large-img">
+            </div>
+        </div>
+
+        <div class="fact">
+            <p class="fact-title"><b>So many stars</b></p>
+            <div class="fact-content">
+                <span>There are more stars in the universe than grains of sand on all the beaches on Earth. That’s at least a billion trillion!</span>
+                <img src="/static/images/stars.jpg" alt="stars" class="large-img">
+            </div>
+        </div>
+
+        <div class="fact">
+            <p class="fact-title"><b>Less dense than water</b></p>
+            <div class="fact-content">
+                <span>Saturn is the only planet in our solar system that is less dense than water. It could float in a bathtub if anybody could build a bathtub
+
+ big enough.</span>
+                <img src="/static/images/saturn.jpg" alt="saturn" class="large-img">
+            </div>
+        </div>
+
+        <div class="fact">
+            <p class="fact-title"><b>Pluto is smaller than the United States.</b></p>
+            <div class="fact-content">
+                <span>If you were to walk around the equator of Pluto it would be the same distance as walking from London to Denver.</span>
+                <img src="/static/images/pluto.jpg" alt="pluto" class="large-img">
+            </div>
+        </div>
+
+        <div class="fact">
+            <p class="fact-title"><b>Neptune has only completed one orbit around the Sun since its discovery</b></p>
+            <div class="fact-content">
+                <span>Neptune takes a whopping 165 years to complete one full orbit around the Sun. Since it was discovered in 1846, Neptune only finished its first full post-discovery orbit in 2011.</span>
+                <img src="/static/images/neptune.jpg" alt="neptune" class="large-img">
+            </div>
+        </div>
+
+        <div class="fact">
+            <p class="fact-title"><b>Low power</b></p>
+            <div class="fact-content">
+                <span>The radio signal that a spacecraft uses to contact Earth has no more power than a refrigerator light bulb.<br>And by the time the signal has traveled across space, the signal is only one billionth of one-billionth of one watt!</span>
+                <img src="/static/images/lightbulb.jpg" alt="lightbulb" class="large-img">
+            </div>
+        </div>
+
+        <div class="fact">
+            <p class="fact-title"><b>Moon Museum</b></p>
+            <div class="fact-content">
+                <span>Exhibits in the museum include: Historical Artifacts: Displays artifacts from various moon missions, including tools, space suits, lunar modules from the Apollo, Artemis, and international missions and the famous american flag.<br>Lunar Geology: Features a vast collection of moon rocks and soil samples, with interactive displays explaining their composition and history.<br>Space Technology: Showcases the evolution of space travel technology, from early rockets to advanced spacecraft and rovers.<br>Virtual Reality Experiences: Offers VR experiences that allow visitors to relive historic moon missions and explore the lunar surface in detail.</span>
+                <img src="/static/images/moon_museum.png" alt="museum" class="large-img">
+            </div>
+        </div>
+
+        <div class="data">
+            <a href="#" class="hire">Back To Top</a>
         </div>
     </div>
-
-    <div class="fact">
-        <p class="fact-title"><b>Flag on the moon</b></p>
-        <div class="fact-content">
-            <span>Aldrin and fellow Moon-walker Neil Armstrong planted the flag just 27 feet from the centerline of the lunar lander.<br>The flagpole did not withstand the rocket exhaust of liftoff. Subsequent missions placed the flag farther from the lander to ensure they remained upright.</span>
-            <img src="/static/images/flag.jpg" alt="Flag" class="large-img">
-        </div>
-    </div>
-
-    <div class="fact">
-        <p class="fact-title"><b>Space tourism</b></p>
-        <div class="fact-content">
-            <span>Space tourism is beginning to gain traction thanks to companies like Virgin Galactic and Blue Origin offering public suborbital rides<br>In 2021, Blue Origin’s New Shepard carried Jeff Bezos and three other passengers to the edge of space.</span>
-            <img src="/static/images/spaceship.jpg" alt="spaceship" class="large-img">
-        </div>
-    </div>
-
-    <div class="fact">
-        <p class="fact-title"><b>Cost of space travel</b></p>
-        <div class="fact-content">
-            <span>Space Travel is wildly expensive. Orbital Science's Cygnus spacecraft's cargo costs about $43,180 per pound of cargo, and SpaceX's new carriers about $27,000 per pound.<br>We have determined that a 16-ounce bottle of water can cost anywhere between $9,100 to $43,180 to blast into space.</span>
-            <img src="/static/images/money.png" alt="money" class="large-img">
-        </div>
-    </div>
-
-    <div class="fact">
-        <p class="fact-title"><b>Space travel is slow</b></p>
-        <div class="fact-content">
-            <span>Based on past missions, we know that it usually takes about three days for a manned spacecraft to reach the moon<br>The average distance from Earth to the moon is 240,000 miles (386,243 kilometers).<br>This translates to a spacecraft's speed of about 3,333 mph (5,364 kph).</span>
-            <img src="/static/images/slow.jpg" alt="slow" class="large-img">
-        </div>
-    </div>
-
-    <div class="fact">
-        <p class="fact-title"><b>Space is cold</b></p>
-        <div class="fact-content">
-            <span>The temperature in the void of space is about −270.45 °C. Space is a hard vacuum, meaning it is a void containing very little matter.</span>
-            <img src="/static/images/cold.jpg" alt="cold" class="large-img">
-        </div>
-    </div>
-
-    <div class="fact">
-        <p class="fact-title"><b>So many stars</b></p>
-        <div class="fact-content">
-            <span>There are more stars in the universe than grains of sand on all the beaches on Earth. That’s at least a billion trillion!</span>
-            <img src="/static/images/stars.jpg" alt="stars" class="large-img">
-        </div>
-    </div>
-
-    <div class="fact">
-        <p class="fact-title"><b>Less dense than water</b></p>
-        <div class="fact-content">
-            <span>Saturn is the only planet in our solar system that is less dense than water. It could float in a bathtub if anybody could build a bathtub big enough.</span>
-            <img src="/static/images/saturn.jpg" alt="saturn" class="large-img">
-        </div>
-    </div>
-
-    <div class="fact">
-        <p class="fact-title"><b>Pluto is smaller than the United States.</b></p>
-        <div class="fact-content">
-            <span>If you were to walk around the equator of Pluto it would be the same distance as walking from London to Denver.</span>
-            <img src="/static/images/pluto.jpg" alt="pluto" class="large-img">
-        </div>
-    </div>
-
-    <div class="fact">
-        <p class="fact-title"><b>Neptune has only completed one orbit around the Sun since its discovery</b></p>
-        <div class="fact-content">
-            <span>Neptune takes a whopping 165 years to complete one full orbit around the Sun. Since it was discovered in 1846, Neptune only finished its first full post-discovery orbit in 2011.</span>
-            <img src="/static/images/neptune.jpg" alt="neptune" class="large-img">
-        </div>
-    </div>
-
-    <div class="fact">
-        <p class="fact-title"><b>Low power</b></p>
-        <div class="fact-content">
-            <span>The radio signal that a spacecraft uses to contact Earth has no more power than a refrigerator light bulb.<br>And by the time the signal has traveled across space, the signal is only one billionth of one-billionth of one watt!</span>
-            <img src="/static/images/lightbulb.jpg" alt="lightbulb" class="large-img">
-        </div>
-    </div>
-
-    <div class="fact">
-        <p class="fact-title"><b>Moon Museum</b></p>
-        <div class="fact-content">
-            <span>Exhibits in the museum include: Historical Artifacts: Displays artifacts from various moon missions, including tools, space suits, lunar modules from the Apollo, Artemis, and international missions
-
- and the famous american flag.<br>Lunar Geology: Features a vast collection of moon rocks and soil samples, with interactive displays explaining their composition and history.<br>Space Technology: Showcases the evolution of space travel technology, from early rockets to advanced spacecraft and rovers.<br>Virtual Reality Experiences: Offers VR experiences that allow visitors to relive historic moon missions and explore the lunar surface in detail.</span>
-            <img src="/static/images/moon_museum.png" alt="museum" class="large-img">
-        </div>
-    </div>
-
-    <div class="data">
-        <a href="#" class="hire">Back To Top</a>
-    </div>
-</div>
 </body>
 </html>
+

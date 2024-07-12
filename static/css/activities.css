@@ -190,7 +190,7 @@ input[type="submit"] {
     padding: 15px;
     font-size: 18px;
     color: #fff;
-    background-color: #4CAF50;
+    background-color: #7d6bb5;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -199,8 +199,25 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #60538a;
     text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #7d6bb5;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #60538a;
 }
 
 

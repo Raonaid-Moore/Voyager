@@ -1,114 +1,319 @@
-body {
-    background-image: url('/static/images/space.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-p {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: black;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 10px;
-}
-.content {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-.content img {
-    margin: 10px;
-    align-self: center;
-    max-width: 100%;
-    height: auto;
-}
-.content div {
-    flex: 1;
-    min-width: 300px;
-    margin: 10px;
-}
-h1, h2 {
-    margin: 20px;
-    color: white;
-    text-align: center;
-}
-footer {
-    margin-top: 20px;
-    text-align: center;
-    color: white;
-    padding: 10px 0;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-.moon-car-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-.moon-car-section img {
-    max-width: 250px;
-    height: auto;
-    margin: 10px;
-}
-.moon-car-section p {
-    flex: 1;
-    min-width: 300px;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: black;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 10px;
-}
- ul {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Space Travel Agency</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/navbar.css">
+    <link rel="stylesheet" href="../static/css/transport.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
 
-  list-style-type: none;
-
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+* {
   margin: 0;
-
   padding: 0;
-
-  overflow: hidden;
-
-  background-color: #5E6CAB;
-
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
+        body {
+            background-color: #5E6CAB;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', "Poppins", sans serif;
+            font-size: 18px;
+        }
+        p {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .content img {
+            max-width: 300px;
+            height: auto;
+            margin: 15px;
+            border-radius: 10px;
+        }
+        .content div {
+            flex: 1;
+            min-width: 300px;
+            margin: 15px;
+        }
+        h1, h2 {
+            margin: 20px;
+            color: #425CCF;
+            text-shadow: 2px 2px 4px #000;
+            font-size: 24px;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #000000;
+            font-size: 20px;
+        }
+        .moon-car-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .moon-car-section img {
+            max-width: 250px;
+            height: auto;
+            margin: 15px;
+            border-radius: 10px;
+        }
+        .moon-car-section p {
+            flex: 1;
+            min-width: 300px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #536CAB;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px;
+        }
+        .checklist {
+            margin: 20px;
+            padding: 20px;
+            background-color:white(0, 0, 0, 0.7);
+            color: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: 20px;
+        }
+        .checklist ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .checklist li {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .checklist li i {
+            color: #FFF;
+            margin-right: 10px;
+        }
+        .notice {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: red;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .notice p {
+            color: white;
+        }
+        .booking {
+            margin: 20px;
+            padding: 20px;
+            color: black;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .booking button {
+            background-color: #4B4BA5;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .booking button:hover {
+            background-color: #3A3A94;
+        }
+        .price-table {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .price-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .price-table th, .price-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        .price-table th {
+            background-color: #333;
+            color: white;
+        }
+        .price-table tr:hover {
+            background-color: #444;
+        }
+        .price-table td {
+            color: #800080; /* Purple color for prices */
+        }
+        .price-table note {
+            display: block;
+            margin-top: 10px;
+            color: red;
+        }
+        ul.navbar {
+            background-color: #333;
+            overflow: hidden;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            font-size: 20px;
+        }
+        ul.navbar li {
+            display: inline;
+            padding: 14px 16px;
+        }
+        ul.navbar li a {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+        }
+        ul.navbar li a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        ul.navbar li.dropdown {
+            display: inline-block;
+        }
+        ul.navbar li.dropdown .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        ul.navbar li.dropdown .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        ul.navbar li.dropdown .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        ul.navbar li.dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<ul class="navbar">
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="transport.html">Travel</a></li>
+  <li><a href="book.html">Booking</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li class="dropdown">
+    <a href="accommodation.html" class="dropbtn">Accommodation</a>
+    <div class="dropdown-content">
+      <a href="mars.html">Mars</a>
+      <a href="venus.html">Venus</a>
+      <a href="jupiter.html">Jupiter</a>
+      <a href="saturn.html">Saturn</a>
+    </div>
+  </li>
+</ul>
+    <h1>Transport</h1>
 
-li {
+    <div class="content">
+        <div>
+            <p>
+                Arriving at the Voyager Hotel on the Moon becomes an extraordinary experience with the advent of the futuristic Lunar Glide vehicle. This state-of-the-art spacecraft combines sleek design with advanced technology, effortlessly transitioning from Earth’s atmosphere into lunar space. Equipped with magnetic levitation drives and a robust ion propulsion system, the Lunar Glide offers a smooth, high-speed journey through space, complete with panoramic windows showcasing breathtaking cosmic vistas. Upon nearing the Moon, the vehicle elegantly descends and docks with the Voyager Hotel’s orbital landing platform. Guests disembark to a seamless transition into the hotel’s luxurious environment, all while marveling at the stunning lunar landscape that unfolds before them.
+            </p>
+        </div>
+        <img src="/static/images/rocket taking off.webp" alt="Rocket taking off">
+    </div>
 
-float: left;
+    <h1>What will take you to the Moon</h1>
+    <div class="content">
+        <div>
+            <p>
+                The new advanced rocket ship, Stellar Voyager, revolutionizes lunar travel with its cutting-edge technology and unparalleled speed. Designed with a sleek, aerodynamic structure, the Stellar Voyager is equipped with powerful fusion engines that reduce the journey to the Moon to mere hours. Inside, the spacecraft offers luxurious cabins, state-of-the-art entertainment systems, and panoramic windows that provide breathtaking views of space. Its advanced navigation and safety systems ensure a smooth and secure trip, while eco-friendly propulsion minimizes the environmental impact. As passengers approach the Moon, they experience a seamless transition from high-speed travel to a gentle lunar landing, ready to explore the mysteries of the lunar surface.
+            </p>
+        </div>
+    </div>
 
-}
+    <div class="moon-car-section">
+        <img src="/static/images/moon car.avif" alt="Moon car">
+        <p>
+            Upon landing on the moon, you'll be welcomed by the sleek, autonomous Lunar Rover 3000, a futuristic car designed for swift, comfortable lunar travel. This cutting-edge vehicle, powered entirely by solar energy, effortlessly glides over the moon's surface at remarkable speeds. With its advanced navigation system and plush interior, the Lunar Rover 3000 ensures a smooth, enjoyable ride, allowing you to relax and marvel at the breathtaking lunar landscape. In mere moments, you'll arrive at your destination, the luxurious Voyager Hotel, ready to begin your extraordinary stay on the moon.
+        </p>
+    </div>
 
-li a {
+    <div class="checklist">
+        <h2>What should our passengers expect</h2>
+        <ul>
+            <li><i class="fas fa-check-circle"></i> Always arrive on time</li>
+            <li><i class="fas fa-check-circle"></i> Guaranteed smooth flight</li>
+            <li><i class="fas fa-check-circle"></i> 5 star service while on board by our cabin crew</li>
+        </ul>
+    </div>
 
-  display: block;
+    <div class="notice">
+        <p><strong>Notice:</strong> Bookings on transport can be refundable up until one week before your departure.</p>
+    </div>
 
-  color: white;
+    <div class="booking">
+        <h2>Ready to embark on your lunar adventure?</h2>
+        <button onclick="location.href='book.html'">Book Now Today</button>
+    </div>
 
-  text-align: center;
+    <div class="price-table">
+        <h2>Prices</h2>
+        <table>
+            <tr>
+                <th>Destination</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Mars</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Venus</td>
+                <td>$125</td>
+            </tr>
+            <tr>
+                <td>Jupiter</td>
+                <td>$115</td>
+            </tr>
+            <tr>
+                <td>Saturn</td>
+                <td>$130</td>
+            </tr>
+        </table>
+        <note>Extra luggage bags are $10 each.</note>
+    </div>
 
-  padding: 20px 16px;
-
-  text-decoration: none;
-
-}
-
-
-li a:hover:not(.active) {
-
-  background-color: #425CCF;
-
-}
-
-.active {
-
-  background-color: #7B4BA5;
-
-}
+    <footer>
+        <p>&copy; 2024 Space Travel Agency. All rights reserved.</p>
+    </footer>
+</body>
+</html>
