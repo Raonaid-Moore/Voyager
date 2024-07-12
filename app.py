@@ -4,14 +4,12 @@ app = Flask(__name__)
 
 @app.route('/submit_booking', methods=['POST'])
 def submit_booking():
-    name = request.form['name']
     email = request.form['email']
-    phone = request.form['phone']
-    activity = request.form['activity']
-    date = request.form['date']
-    time = request.form['time']
+    select_room = request.form['select room']
+    check_in= request.form['check in']
+    check_out = request.form['check out']
     # Process the booking (e.g., save to a database)
-    return f"Booking received for {name} to {activity} on {date} at {time}."
+    return f"Booking received for {email} to {select_room} on {check_in} on {check_out}."
 
 if __name__ == '__main__':
     app.run(debug=True)

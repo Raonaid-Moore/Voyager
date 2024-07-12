@@ -3,38 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book a Room</title>
+    <title>Booking</title>
     <link rel="stylesheet" href="../static/css/booking.css">
-    <style>
-    body {
-      background-image: url('../images/istockphoto-1035676256-612x612.jpg');
-      background-size: cover;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-
-    }
-    </style>
 </head>
 <body>
-    <h1>Book a Room</h1>
+    <div class="booking_content">
+    <div class="container">
+        <h1 style="color: black;">Book a Room</h1>
+        <form action="http://127.0.0.1:5000/submit_booking" method="POST">
+            <label>Email Address: </label>
+            <input type="text" name="email address" placeholder="Email Address"/>
 
-    <form method="POST">
+            <label for="room">Select Room:</label>
+            <select id="room" name="room" required>
+                <option value="none selected">None Selected</option>
+                <option value="single_room">Single Room</option>
+                <option value="double_room">Double Room</option>
+                <option value="twin_room">Twin Room</option>
+                <option value="family_room">Family Room</option>
+                <option value="deluxe_suite">Deluxe Suite</option>
+                <option value="presidential_suite">Presidential Suite</option>
+            </select>
 
-            <label>Email: </label>
-            <input type="text" name="email" placeholder="Email Address"/>
+            <label for="date">Check In:</label>
+            <input type="date" id="date" name="date" required>
 
-            <label>Check In: </label>
-            <input type="text" name="check_in" placeholder="Check In"/>
+            <label for="date">Check Out:</label>
+            <input name="date" id="date1" type="date" required>
 
-            <label>Check Out: </label>
-            <input type="text" name="check_out" placeholder="Check Out"/>
-
-            <label>Room Type: </label>
-            <input type="text" name="room_type" placeholder="Room Type"/>
-
-            <label></label>
-            <input type="submit" value="Book Room">
-
-    </form>
+            <input type="submit" value="Book Now">
+        </form>
+    </div>
+</div>
 </body>
 </html>

@@ -32,15 +32,10 @@ class LoginForm(db.Model):
     remember = BooleanField('Remember Me')
     submit = SubmitField('Login')
 
+from flask import Flask, request, render_template
 
-class BookingForm(db.Model):
-    name = StringField('Name', validators=[DataRequired()])
-    email = StringField('Email', validators=[DataRequired(), Email()])
-    check_in = DateField('Check-in Date', validators=[DataRequired()])
-    check_out = DateField('Check-out Date', validators=[DataRequired()])
-    room_type = SelectField('Room Type', choices=[('single', 'Single'), ('double', 'Double'), ('suite', 'Suite')],
-                            validators=[DataRequired()])
-    submit = SubmitField('Book')
+app = Flask(__name__)
+
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -53,33 +48,6 @@ def login():
             return redirect(url_for('index'))
         flash('Login Unsuccessful. Please check email and password', 'danger')
     return render_template('login.html', form=form)
-
-
-@app.route('/book', methods=['GET', 'POST'])
-@login_required
-def book():
-    form = BookingForm()
-    if form.validate_on_submit():
-        new_booking = Booking(
-            name=form.name.data,
-            email=form.email.data,
-            check_in=form.check_in.data,
-            check_out=form.check_out.data,
-            room_type=form.room_type.data,
-            user_id=current_user.id
-        )
-        db.session.add(new_booking)
-        db.session.commit()
-        flash('Your booking has been made', 'success')
-        return redirect(url_for('index'))
-    return render_template('booking.html', form=form)
-
-
-@app.route('/manage_bookings')
-@login_required
-def manage_bookings():
-    bookings = Booking.query.filter_by(user_id=currrent_user.id).all()
-    return render_template('manage_bookings.html', bookings=bookings)
 
 
 @app.route('/logout')
