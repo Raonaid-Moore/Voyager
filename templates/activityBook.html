@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activity Booking Page</title>
-    <link rel="stylesheet" href="../static/css/activities.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/activities.css') }}">
 </head>
 <body>
     <div class="booking_content">
     <div class="container">
         <h1 style="color: black;">Book an Activity</h1>
-        <form action="http://127.0.0.1:5000/submit_booking" method="POST">
+        <form action="http://127.0.0.1:5000/booking" method="POST">
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required>
 
