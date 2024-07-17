@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Voyager</title>
+  <link rel="stylesheet" href="/static/css/mars.css">
+</head>
+<body>
+ <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="transport.html">Transport</a></li>
+  <li><a href="activitiesPage.html">Activities</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li class="dropdown"><a  href="accommodation.html">Accommodation</a>
+    <div class="dropdown-content">
+      <a href="mars.html">Mars</a>
+      <a class="active" href="venus.html">Venus</a>
+      <a href="jupiter.html">Jupiter</a>
+      <a href="saturn.html">Saturn</a>
+    </div>
+  </li>
+ </ul>
+  <div class="container">
+    <div class="image">
+
+    </div>
+    <div class="text">
+      <h1>The Voyager Venus, this is one of our many hotels across the solar system.</h1>
+    </div>
+  </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color:#F2F5EA;
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: blue; /* To ensure text is readable on the dark background */
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .text h1 {
+      color:#7B4BA5; /* Ensures the heading text is readable */
+    }
+
+    div.gallery {
+      border: 1px solid #ccc;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+      color: black; /* Ensures the description text is readable */
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Star rating styles */
+    .star-rating {
+      direction: rtl;
+      display: inline-block;
+      padding: 20px;
+    }
+    .star-rating input[type="radio"] {
+      display: none;
+    }
+    .star-rating label {
+      color: grey;
+      font-size: 30px;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .star-rating input[type="radio"]:checked ~ label {
+      color: gold;
+    }
+    .star-rating label:hover,
+    .star-rating label:hover ~ label {
+      color: gold;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Accommodation</h2>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../static/images/venus bedroom (1).jpg">
+      <img src="../static/images/venus bedroom (1).jpg" alt="Bedroom" width="100" height="100">
+    </a>
+    <div class="desc">This luxurious bedroom will fit all of your needs during your stay with these soundproof walls and comfort, with top of the line mattresses. There are 800 of these rooms available throughout the hotel with 5 presidential suites</a>
+    </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../static/images/venus restaurant (1) (2).webp">
+      <img src="../static/images/venus restaurant (1) (2).webp" alt="Restaurant" width="600" height="400">
+    </a>
+    <div class="desc">The fine cuisine you will find here is incomparable to anything you have ever had before, varying from the best on Earth to the best across the galaxy. You will find multiple restaurants in the hotel, spaced apart as it is so big.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../static/images/venus garden.avif">
+      <img src="../static/images/venus garden.avif" alt="Garden Louge" width="600" height="400">
+    </a>
+    <div class="desc">This pool is the best off-world relaxation spot to dive into, being 70 metres long and 20 wide it could hold a couple of hundred people. It includes two jacuzzis and a plunge pool, with a sauna, for those who like the quiet.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../static/images/venus pool (4).jpg">
+      <img src="../static/images/venus pool (4).jpg" alt="Outdoor Pool" width="600" height="400">
+    </a>
+    <div class="desc">Just a few hundred meters away from the hotel is an activity center with a rooftop pool and an underground gym, for all the athletes. It is the perfect spacious getaway from the hotel with the gardens just outside of it with about 5 acres.</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<!-- Star Rating Section -->
+
+
+<!-- Booking Link Section -->
+<div class="container" style="text-align: center; margin-top: 20px;">
+  <a href="/templates/bookings.html" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;">Book Your Stay Now</a>
+</div>
+
+<div style="padding:6px;">
+  <p></p>
+  <p></p>
+</div>
+</body>
+</html>
+
+
+
