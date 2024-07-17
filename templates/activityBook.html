@@ -10,7 +10,7 @@
     <div class="booking_content">
     <div class="container">
         <h1 style="color: black;">Book an Activity</h1>
-        <form action="http://127.0.0.1:5000/booking" method="POST">
+        <form action="{{url_for('submit_booking')}}" method="POST">
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required>
 

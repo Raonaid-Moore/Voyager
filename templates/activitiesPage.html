@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Things to Do</title>
     <link rel="stylesheet" href="../static/css/activities.css">
+    <style>
+.more {display: none;}
+</style>
 </head>
 <body>
     <ul>
      <li><a href="index.html">Home</a></li>
      <li><a href="about.html">About</a></li>
      <li><a href="transport.html">Transport</a></li>
-     <li><a class="active"  href="activitiesPage.html">Activities</a></li>
+     <li><a class="active"  href="activitiesPage">Activities</a></li>
      <li><a href="contact.html">Contact</a></li>
      <li class="dropdown"><a  href="accommodation.html" class="dropbtn">Accommodation</a>
       <div class="dropdown-content">
@@ -22,11 +25,12 @@
       </div>
     </li>
    </ul>
+    <header>
         <h1 class="header_style">Activities</h1>
     </header>
 
     <div class="book">
-        <p class="book-button" style="font-size: 30px; text-align: center;"><a href="{{url_for('activityBook')}}" class="button">Book an activity here</a></p>
+        <p class="book-button" style="font-size: 30px; text-align: center;"><a href="activityBook" class="button">Book an activity here</a></p>
     </div>
 
     <div class="title">
@@ -214,9 +218,19 @@
 
 </div>
 
-<div class="book">
-        <p class="book-button" style="font-size: 30px; text-align: center;"><a href="activitiesPage.html" class="button">Back to Top</a></p>
-    </div>
+<div class="data">
+            <a href="#top" class="hire" id="backToTop">Back To Top</a>
+        </div>
+
+    <script>
+        document.getElementById('backToTop').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 
 
 
