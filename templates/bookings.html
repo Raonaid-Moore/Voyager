@@ -10,12 +10,12 @@
     <div class="booking_content">
     <div class="container">
         <h1 style="color: #60538a;">Book a Room</h1>
-        <form action="http://127.0.0.1:5000/submit_booking" method="POST">
+        <form action="http://127.0.0.1:5000/bookings" method="POST">
             <label>Email Address: </label>
-            <input type="text" name="email address" placeholder="Email Address"/>
+            <input type="text" name="email_address" placeholder="Email Address"/>
 
-            <label for="room">Select Room:</label>
-            <select id="room" name="room" required>
+            <label for="select_room">Select Room:</label>
+            <select id="select_room" name="select_room" required>
                 <option value="none selected">None Selected</option>
                 <option value="single_room">Single Room</option>
                 <option value="double_room">Double Room</option>
@@ -25,11 +25,11 @@
                 <option value="presidential_suite">Presidential Suite</option>
             </select>
 
-            <label for="date">Check In:</label>
-            <input type="date" id="date" name="date" required>
+            <label for="check_in">Check In:</label>
+            <input id="check_in" name="check_in" type="date" required>
 
-            <label for="date">Check Out:</label>
-            <input name="date" id="date1" type="date" required>
+            <label for="check_out">Check Out:</label>
+            <input id="check_out" name="check_out" type="date" required>
 
             <input type="submit" value="Book Now">
         </form>
@@ -37,3 +37,4 @@
 </div>
 </body>
 </html>
+
