@@ -211,6 +211,57 @@ input[type="submit"]:hover {
     }
 }
 
+.more {display: none;}
+
+.hire{
+font-family: "Poppins", sans-serif;
+font-color: #fff;
+text-decoration: none;
+border: none;
+padding: 12px 25px
+border-radius: 6px;
+transition: 0.5s;
+position: center;
+}
+
+.data {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-color: white;
+    color: #fff;
+    background-color: #7868ab;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.read-more-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #7868ab;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #60538a;
+}
+
+
+
+
+
 
 
 

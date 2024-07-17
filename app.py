@@ -45,6 +45,7 @@ def transport():
 
 @app.route('/activitiesPage')
 def activitiesPage():
+    print("in get activities page")
     return render_template('activitiesPage.html')
 
 @app.route('/contact')
@@ -99,6 +100,8 @@ def submit_booking():
         print(e)
         print('An error occurred while booking the class.')
     return f"Booking received for {name} to {activity} on {date} at {time}."
+
+
 
 
 if __name__ == '__main__':
