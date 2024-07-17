@@ -12,6 +12,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin : 100px
 
 
 
@@ -20,7 +21,7 @@ body{
   width: 85%;
   background: #FFF;
   border-radius: 10px;
-  padding: 20px 60px 30px 40px;
+  padding: 40px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 
 
@@ -141,7 +142,7 @@ body{
 }
 @media (max-width: 820px) {
   .container{
-    margin: 40px 0;
+    margin: 40px ;
     height: 100%;
   }
   .container .content{
@@ -175,7 +176,7 @@ html,body{
   height: 100%;
   width: 100%;
   place-items: center;
-  background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+  background : #F2F5EA
 
 }
 .wrapper{
