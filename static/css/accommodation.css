@@ -82,7 +82,7 @@ div.desc {
 }
 </style>
 body {
-  background-image: url('../static/images/galaxy.png');
+
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -204,5 +204,8 @@ li a:hover:not(.active) {
 .active {
   background-color: #7B4BA5;
 }
+
+
+
 
 
