@@ -71,7 +71,7 @@ def activityBook():
     return render_template('activityBook.html')
 
 @app.route('/contact', methods=['POST'])
-def submit_message():
+def submit_booking():
     message = request.form['message']
     email = request.form['email']
     new_message = Message(email=email, message=message)
