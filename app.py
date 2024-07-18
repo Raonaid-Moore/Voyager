@@ -98,7 +98,7 @@ def submit_booking():
         # If an error occurs, roll back the transaction
         db.session.rollback()
         print(e)
-        print('An error occurred while booking the class.')
+        print('An error occurred while booking the activity.')
     return f"Booking received for {name} to {activity} on {date} at {time}."
 
 
