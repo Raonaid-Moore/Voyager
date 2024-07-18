@@ -17,9 +17,7 @@ function moveSlide(n) {
         currentIndex = slides.length - 1;
     }
 
-    carouselContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
-    slideInterval = setInterval(nextSlide, 5000); // Reset interval
-}
+
 
 // Optional: Attach event listeners to buttons if needed
 document.querySelector('.carousel-control.prev').addEventListener('click', () => moveSlide(-1));

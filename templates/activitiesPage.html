@@ -5,28 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Things to Do</title>
     <link rel="stylesheet" href="../static/css/activities.css">
+    <style>
+.more {display: none;}
+</style>
 </head>
 <body>
     <ul>
-     <li><a href="index.html">Home</a></li>
-     <li><a href="about.html">About</a></li>
-     <li><a href="transport.html">Transport</a></li>
-     <li><a class="active"  href="activitiesPage.html">Activities</a></li>
-     <li><a href="contact.html">Contact</a></li>
-     <li class="dropdown"><a  href="accommodation.html" class="dropbtn">Accommodation</a>
+     <li><a href="/index">Home</a></li>
+     <li><a href="/about">About</a></li>
+     <li><a href="/transport">Transport</a></li>
+     <li><a class="active"  href="activitiesPage">Activities</a></li>
+     <li><a href="/contact">Contact</a></li>
+     <li class="dropdown"><a  href="/accommodation" class="dropbtn">Accommodation</a>
       <div class="dropdown-content">
-       <a href="mars.html">Mars</a>
-       <a href="venus.html">Venus</a>
-       <a href="jupiter.html">Jupiter</a>
-       <a href="saturn.html">Saturn</a>
+       <a href="/mars">Mars</a>
+       <a href="/venus">Venus</a>
+       <a href="/jupiter">Jupiter</a>
+       <a href="/saturn">Saturn</a>
       </div>
     </li>
    </ul>
+    <header>
         <h1 class="header_style">Activities</h1>
     </header>
 
     <div class="book">
-        <p class="book-button" style="font-size: 30px; text-align: center;"><a href="{{url_for('activityBook')}}" class="button">Book an activity here</a></p>
+        <p class="book-button" style="font-size: 30px; text-align: center;"><a href="activityBook" class="button">Book an activity here</a></p>
+    </div>
+    <div class="book">
+        <p class="book-button" style="font-size: 30px; text-align: center;"><a href="kidsActivities.html" class="button">Book a kids activity here</a></p>
     </div>
 
     <div class="title">
@@ -36,23 +43,25 @@
         <p style="font-size: 20px;">Get ready to defy gravity with our Zero Gravity experience at Voyager Hotel! This one-of-a-kind experience offers guests the chance to float, flip and soar in the unique environment of microgravity, creating unforgettable memories and endless fun.</p>
         <p style="font-size: 20px; color: #5E6CAB;"><b>Activity Overview</b></p>
         <p style="font-size: 15px; color: #5E6CAB;"><b>1. Pre-Flight Orientation</b></p>
-        <p style="font-size: 15px;">Start your Zero Gravity adventure with an engaging orientation session led by our knowledgeable space crew. Learn about the science of microgravity, its effects on the human body, and essential safety guidelines to ensure you make the most of your Zero Gravity experience.</p>
+        <p class="text hidden" style="font-size: 15px;">Start your Zero Gravity adventure with an engaging orientation session led by our knowledgeable space crew. Learn about the science of microgravity, its effects on the human body, and essential safety guidelines to ensure you make the most of your Zero Gravity experience.</p>
         <p style="font-size: 15px; color: #5E6CAB;"><b>2. Suit-Up</b></p>
-        <p style="font-size: 15px;">Slip into our specially designed Zero Gravity suits, made for maximum comfort and flexibility. These suits feature lightweight materials and adjustable fittings to accommodate all body types, ensuring you can move freely and comfortably in the Zero Gravity environment.</p>
+        <p class="text hidden" style="font-size: 15px;">Slip into our specially designed Zero Gravity suits, made for maximum comfort and flexibility. These suits feature lightweight materials and adjustable fittings to accommodate all body types, ensuring you can move freely and comfortably in the Zero Gravity environment.</p>
         <p style="font-size: 15px; color: #5E6CAB;"><b>3. Zero Gravity Chamber</b></p>
-        <p style="font-size: 15px;">Enter our state-of-the-art Zero Gravity Chamber, a spacious, cushioned area designed for maximum fun and safety. The chamber is equipped with soft walls and floors to allow for safe and enjoyable movements, whether you're floating, tumbling, or performing acrobatic maneuvers.</p>
+        <p class="text hidden" style="font-size: 15px;">Enter our state-of-the-art Zero Gravity Chamber, a spacious, cushioned area designed for maximum fun and safety. The chamber is equipped with soft walls and floors to allow for safe and enjoyable movements, whether you're floating, tumbling, or performing acrobatic maneuvers.</p>
         <p style="font-size: 15px; color: #5E6CAB;"><b>4. Weightless Play</b></p>
-        <p style="font-size: 15px;">Experience the thrill of weightlessness as you float effortlessly through the chamber. Try out a variety of activities tailored for Zero Gravity, including Floating Races, Aerial Acrobatics, Zero-G Catch or Space Volleyball, or simply relax and enjoy the sensation of floating, taking in the serene and surreal experience of microgravity</p>
+        <p class="text hidden" style="font-size: 15px;">Experience the thrill of weightlessness as you float effortlessly through the chamber. Try out a variety of activities tailored for Zero Gravity, including Floating Races, Aerial Acrobatics, Zero-G Catch or Space Volleyball, or simply relax and enjoy the sensation of floating, taking in the serene and surreal experience of microgravity</p>
         <p style="font-size: 15px; color: #5E6CAB;"><b>5. Guided Exercises</b></p>
-        <p style="font-size: 15px;">Participate in guided exercises with our trained space instructors, who will teach you advanced zero-gravity techniques and tricks. Mater the art of controlled movements and learn how to navigate through the chamber with ease</p>
+        <p class="text hidden" style="font-size: 15px;">Participate in guided exercises with our trained space instructors, who will teach you advanced zero-gravity techniques and tricks. Mater the art of controlled movements and learn how to navigate through the chamber with ease</p>
         <p style="font-size: 15px; color: #5E6CAB;"><b>6. Capture the Moment</b></p>
-        <p style="font-size: 15px;">Our team will capture high-definition photos and videos of your Zero Gravity experience, so you can relive ethe excitement and share it with friends and family back on Earth. Each guest will receive a personalised highlight reel as a memento of their adventure</p>
+        <p class="text hidden" style="font-size: 15px;">Our team will capture high-definition photos and videos of your Zero Gravity experience, so you can relive ethe excitement and share it with friends and family back on Earth. Each guest will receive a personalised highlight reel as a memento of their adventure</p>
         <p style="font-size: 20px; color: #5E6CAB;"><b>Additional information</b></p>
         <p style="font-size: 15px;"><b>Duration:</b> 1 hour (including orientation and Zero Gravity time)</p>
         <p style="font-size: 15px;"><b>Group Size:</b> Up to 12 participants per session</p>
         <p style="font-size: 15px;"><b>Requirements:</b> Guests must be at least 10 years old and in good health. A brief medical screening will be conducted prior to the activity.</p>
         <p style="font-size: 15px;"><b>What to Bring</b> Comfortable clothing to wear under the zero-gravity suit, and a playful spirit!</p>
+        <button class="read-more-btn">Read More</button>
     </div>
+    <script src="scripts.js"></script>
 
     <div class="title">
         <h1 style="font-size: 40px;">Moon Walk</h1>
@@ -64,24 +73,25 @@
         <p style="font-size: 18px;">This exhilarating experience is designed to be both fun and educational, providing an unforgettable addition to your stay.</p>
         <p style="font-size: 18px; color: #5E6CAB;"><b>Activity Overview</b></p>
         <p style="font-size: 15px; color: #5E6CAB;"><b>1. Pre-Walk Briefing</b></p>
-        <p style="font-size: 15px;">Begin your adventure with a comprehensive briefing from our experienced lunar guides. Learn about the history of moon exploration, the unique</p>
-        <p style="font-size: 15px;">conditions of the lunar environment, and essential safety protocols. You'll also get a sneak peek of the stunning lunar landscape you'll be exploring.</p>
+        <p class="text hidden" style="font-size: 15px;">Begin your adventure with a comprehensive briefing from our experienced lunar guides. Learn about the history of moon exploration, the unique</p>
+        <p class="text hidden" style="font-size: 15px;">conditions of the lunar environment, and essential safety protocols. You'll also get a sneak peek of the stunning lunar landscape you'll be exploring.</p>
         <p style="font-size: 15px; color: #5E6CAB;"><b>2. Suit-Up</b></p>
-        <p style="font-size: 15px;">Gear up in our state-of-the-art, custom-designed space suits. These suits are lightweight, flexible and equipped with advanced life support systems to ensure</p>
-        <p style="font-size: 15px;">your comfort and safety. Our staff will assist you in putting on your suit and conducting a final safety check before departure.</p>
+        <p class="text hidden" style="font-size: 15px;">Gear up in our state-of-the-art, custom-designed space suits. These suits are lightweight, flexible and equipped with advanced life support systems to ensure</p>
+        <p class="text hidden" style="font-size: 15px;">your comfort and safety. Our staff will assist you in putting on your suit and conducting a final safety check before departure.</p>
         <p style="font-size: 15px; color: #5E6CAB;"><b>3. Lunar Transport</b></p>
-        <p style="font-size: 15px;">Board our specialized lunar rover for a short journey from the hotel to the designated moon walking area. As you travel, enjoy breathtaking views of the Moon's craters, mountains, and vast plains through the rover's panoramic windows.</p>
+        <p class="text hidden" style="font-size: 15px;">Board our specialized lunar rover for a short journey from the hotel to the designated moon walking area. As you travel, enjoy breathtaking views of the Moon's craters, mountains, and vast plains through the rover's panoramic windows.</p>
         <p style="font-size: 15px; color: #5E6CAB;"><b>4. Moon Walk</b></p>
-        <p style="font-size: 15px;"> Step out onto the Moon's surface and feel the sensation of reduced gravity as you take your first steps. The lunar terrain offers a variety of features of explore, form dusty plains to rugged craters. Practice your astronaut moves, such as the iconic moon jump, and capture incredible photos to commemorate your adventure.</p>
+        <p class="text hidden" style="font-size: 15px;"> Step out onto the Moon's surface and feel the sensation of reduced gravity as you take your first steps. The lunar terrain offers a variety of features of explore, form dusty plains to rugged craters. Practice your astronaut moves, such as the iconic moon jump, and capture incredible photos to commemorate your adventure.</p>
         <p style="font-size: 15px; color: #5E6CAB;"><b>5. Interactive Exploration</b></p>
-        <p style="font-size: 15px;">Engage in a range of fun and interactive activities during your moon walk. Collect moon rocks as souvenirs, participate in a friendly low-gravity relay-race, and learn to navigate the lunar surface using authentic astronaut techniques. Our guides will be on hand to provide insights and answer any questions you may have.</p>
+        <p class="text hidden" style="font-size: 15px;">Engage in a range of fun and interactive activities during your moon walk. Collect moon rocks as souvenirs, participate in a friendly low-gravity relay-race, and learn to navigate the lunar surface using authentic astronaut techniques. Our guides will be on hand to provide insights and answer any questions you may have.</p>
         <p style="font-size: 15px; color: #5E6CAB;"><b>6. Return and Reflect</b></p>
-        <p style="font-size: 15px;">After your exhilarating walk, return to the hotel in the lunar rover. Enjoy a debriefing session where you can share your experiences with fellow guests and receive a personalised certificate of completion, along with a high-resolution photo of you on the Moon!</p>
+        <p class="text hidden" style="font-size: 15px;">After your exhilarating walk, return to the hotel in the lunar rover. Enjoy a debriefing session where you can share your experiences with fellow guests and receive a personalised certificate of completion, along with a high-resolution photo of you on the Moon!</p>
         <p style="font-size: 20px; color: #5E6CAB;"><b>Additional information</b></p>
         <p style="font-size: 15px;"><b>Duration:</b> 2 hours (including briefing, transport and moon walk)</p>
         <p style="font-size: 15px;"><b>Group Size:</b> Up to 10 participants per session</p>
         <p style="font-size: 15px;"><b>Requirements:</b> Guests must be at least 12 years old and in good health. A brief medical screening will be conducted prior to the activity.</p>
         <p style="font-size: 15px;"><b>What to Bring:</b> Comfortable clothing to wear under the space suit.</p>
+        <button class="read-more-btn">Read More</button>
     </div>
     <div class="title">
         <h1 style="font-size: 40px;">Celestial Spa</h1>
@@ -90,26 +100,27 @@
         <p style="font-size: 20px;">Welcome to our Venusian Celestial Spa, the ultimate relaxation destination located within the stunning Voyager Hotel on the beautiful planet Venus.Nestles amidst the surreal and breathtaking landscape of Earth's neighbouring planet, our spa offers a unique blend of advanced space-age therapies and timeless relaxation techniques, ensuring a rejuvenating experience like no other.</p>
         <p style="font-size: 20px; color: #5E6CAB;"><b>Spa Overview</b></p>
         <p style="font-size: 15px; color: #5E6CAB;"><b>1. Celestial Arrival</b></p>
-        <p style="font-size: 15px;">Begin your serene journey with a smooth arrival at the Voyager Hotel. Our dedicated team will greet you and guide you to the Celestial Spa, where tranquility and luxury await.</p>
+        <p class="text hidden" style="font-size: 15px;">Begin your serene journey with a smooth arrival at the Voyager Hotel. Our dedicated team will greet you and guide you to the Celestial Spa, where tranquility and luxury await.</p>
         <p style="font-size: 15px; color: #5E6CAB;"><b>2. Atmosphere and Ambience</b></p>
-        <p style="font-size: 15px;">Step into a world of calm as you enter the spa, designated to reflect the ethereal beauty of Venus. Soft, ambient lighting, soothing sounds of nature, and panoramic views of Venus's rolling plains and gentle mists create a serene and otherworldly atmosphere. The decor combines futuristic elegance with natural elements, providing a perfect balance of comfort and sophistication.</p>
+        <p class="text hidden" style="font-size: 15px;">Step into a world of calm as you enter the spa, designated to reflect the ethereal beauty of Venus. Soft, ambient lighting, soothing sounds of nature, and panoramic views of Venus's rolling plains and gentle mists create a serene and otherworldly atmosphere. The decor combines futuristic elegance with natural elements, providing a perfect balance of comfort and sophistication.</p>
         <p style="font-size: 15px; color: #5E6CAB;"><b>3. Signature Treatments</b></p>
-        <p style="font-size: 15px;"><b>Venusian Thermal Baths:</b> Immerse yourself in our thermal baths infused with minerals and elements unique to Venus, known for their therapeutic properties. The warm, effervescent waters help to relax muscles, improve circulation, and rejuvenate the skin</p>
-        <p style="font-size: 15px;"><b>Cosmic Hot Stone Massage:</b> Experience deep relaxation with our Cosmic Hot Stone Massage. Using smooth, heated stones sourced from Venusian volcanic rock, our skilled therapists will melt away tension and stress, leaving you feeling renewed and balanced.</p>
-        <p style="font-size: 15px;"><b>Stellar Skin Renewal:</b> Rejuvenate your skin with our advanced facial treatments, featuring ingredients harvested from Venus's unique flora. These treatments are designed to enhance your complexion, promote collagen production, and provide a radiant, youthful glow.</p>
+        <p class="text hidden" style="font-size: 15px;"><b>Venusian Thermal Baths:</b> Immerse yourself in our thermal baths infused with minerals and elements unique to Venus, known for their therapeutic properties. The warm, effervescent waters help to relax muscles, improve circulation, and rejuvenate the skin</p>
+        <p class="text hidden" style="font-size: 15px;"><b>Cosmic Hot Stone Massage:</b> Experience deep relaxation with our Cosmic Hot Stone Massage. Using smooth, heated stones sourced from Venusian volcanic rock, our skilled therapists will melt away tension and stress, leaving you feeling renewed and balanced.</p>
+        <p class="text hidden" style="font-size: 15px;"><b>Stellar Skin Renewal:</b> Rejuvenate your skin with our advanced facial treatments, featuring ingredients harvested from Venus's unique flora. These treatments are designed to enhance your complexion, promote collagen production, and provide a radiant, youthful glow.</p>
         <p style="font-size: 15px; color: #5E6CAB;"><b>4. Unique Experiences</b></p>
-        <p style="font-size: 15px;"><b>Venusian Vapour Caves:</b> Detoxify and unwind in our Venusian Vapour Caves, where natural steam, infused with Venusian minerals envelops you, cleansing your pores and revitalising your body.</p>
-        <p style="font-size: 15px;"><b>Galactic Sound Therapy:</b> Drift into a state of deep relaxation with our Galactic Sound Therapy sessions. Utilizing sound waves and harmonic frequencies inspired by the cosmos, this therapy balances your energy and enhances your overall well-being.</p>
-        <p style="font-size: 15px;"><b>Luminous Float Tanks:</b> Experience the sensation of floating amidst the stars in our Luminous Float Tanks. Filled with nutrient-rich, buoyant water, these tanks provide a serene environment for complete sensory relaxation and mental clarity</p>
+        <p class="text hidden" style="font-size: 15px;"><b>Venusian Vapour Caves:</b> Detoxify and unwind in our Venusian Vapour Caves, where natural steam, infused with Venusian minerals envelops you, cleansing your pores and revitalising your body.</p>
+        <p class="text hidden" style="font-size: 15px;"><b>Galactic Sound Therapy:</b> Drift into a state of deep relaxation with our Galactic Sound Therapy sessions. Utilizing sound waves and harmonic frequencies inspired by the cosmos, this therapy balances your energy and enhances your overall well-being.</p>
+        <p class="text hidden" style="font-size: 15px;"><b>Luminous Float Tanks:</b> Experience the sensation of floating amidst the stars in our Luminous Float Tanks. Filled with nutrient-rich, buoyant water, these tanks provide a serene environment for complete sensory relaxation and mental clarity</p>
         <p style="font-size: 15px; color: #5E6CAB;"><b>5. Custom Wellness Programs</b></p>
-        <p style="font-size: 15px;">Personalise your spa journey with our custom wellness programs. Whether you seek relaxation, rejuvenation, or revitalization, our expert therapists will tailor treatments to your individual needs and preferences, ensuring a deeply satisfying and transformative experience.</p>
+        <p class="text hidden" style="font-size: 15px;">Personalise your spa journey with our custom wellness programs. Whether you seek relaxation, rejuvenation, or revitalization, our expert therapists will tailor treatments to your individual needs and preferences, ensuring a deeply satisfying and transformative experience.</p>
         <p style="font-size: 15px; color: #5E6CAB;"><b>6. Post-Treatment Relaxation</b></p>
-        <p style="font-size: 15px;">After your treatments, unwind in our tranquil lounge area, featuring comfortable seating, calming music, and a selection of healthy refreshments. Enjoy breathtaking views of Venus's picturesque landscape as you savour the lingering effects of your spa experience.</p>
+        <p class="text hidden" style="font-size: 15px;">After your treatments, unwind in our tranquil lounge area, featuring comfortable seating, calming music, and a selection of healthy refreshments. Enjoy breathtaking views of Venus's picturesque landscape as you savour the lingering effects of your spa experience.</p>
         <p style="font-size: 20px; color: #5E6CAB;"><b>Additional Information</b></p>
         <p style="font-size: 15px;"><b>Duration:</b> Flexible packages ranging from 1-hour treatments to full-day retreats</p>
         <p style="font-size: 15px;"><b>Group Size:</b> Individual and couples treatments available</p>
         <p style="font-size: 15px;"><b>Requirements:</b> Guests must be at least 16 years old. A brief consultation with our spa specialists will ensure treatments are suited to your health and wellness needs</p>
         <p style="font-size: 15px;"><b>What to Bring:</b>Comfortable clothing and a desire for ultimate relaxation</p>
+        <button class="read-more-btn">Read More</button>
     </div>
 <div class="image-stack">
     <img src="../static/images/spa1.jpg" alt="Image 1" class="stacked-image">
@@ -127,26 +138,28 @@
          <p style="font-size: 20px; text-align: left">a unique blend of thrilling rides, relaxing pools, and intergalactic fun for guests of all ages.</p>
          <p style="font-size: 20px; color: #5E6CAB; text-align: left"><b>Water park Overview</b></p>
          <p style="font-size: 15px; color: #5E6CAB; text-align: left"><b>1. Arrival and Introduction</b></p>
-         <p style="font-size: 15px; text-align: left">Your adventure begins with a warm welcome at the Voyager Hotel. Our friendly staff will guide you to Europa Splashdown, where the</p>
-         <p style="font-size: 15px; text-align: left">anticipation of an aquatic adventure unlike any other awaits. As you approach, the sight of glistening water rides and vibrant pools set</p>
-         <p style="font-size: 15px; text-align: left">against Europa's icy landscape will leave you in awe</p>
+         <p class="text hidden" style="font-size: 15px; text-align: left">Your adventure begins with a warm welcome at the Voyager Hotel. Our friendly staff will guide you to Europa Splashdown, where the</p>
+         <p class="text hidden" style="font-size: 15px; text-align: left">anticipation of an aquatic adventure unlike any other awaits. As you approach, the sight of glistening water rides and vibrant pools set</p>
+         <p class="text hidden" style="font-size: 15px; text-align: left">against Europa's icy landscape will leave you in awe</p>
          <p style="font-size: 15px; color: #5E6CAB; text-align: left"><b>2. Europa's Gravity-Defying Slides </b></p>
-         <p style="font-size: 15px; text-align: left">Experience the thrill of our gravity-defying slides, taking advantage of Europa's lower gravity to provide longer and more exhilarating</p>
-         <p style="font-size: 15px; text-align: left">rises such as the Galactic Plunge, Orbital Racer and Moonlight Whirl</p>
+         <p class="text hidden" style="font-size: 15px; text-align: left">Experience the thrill of our gravity-defying slides, taking advantage of Europa's lower gravity to provide longer and more exhilarating</p>
+         <p class="text hidden" style="font-size: 15px; text-align: left">rises such as the Galactic Plunge, Orbital Racer and Moonlight Whirl</p>
          <p style="font-size: 15px; color: #5E6CAB; text-align: left"><b>3. Zero-G Wave Pool</b></p>
-         <p style="font-size: 15px; text-align: left">Float and play in our Zero-G Wave Pool, where gentle waves simulate the sensation of weightlessness. Whether you're lounging on the surface or diving  through the waves, this pool offers a relaxing and otherworldly experience.</p>
+         <p class="text hidden" style="font-size: 15px; text-align: left">Float and play in our Zero-G Wave Pool, where gentle waves simulate the sensation of weightlessness. Whether you're lounging on the surface or diving  through the waves, this pool offers a relaxing and otherworldly experience.</p>
          <p style="font-size: 15px; color: #5E6CAB; text-align: left"><b>4. Ice Cavern Rapids</b></p>
-         <p style="font-size: 15px; text-align: left">Navigate through our Ice Cavern Rapids, a thrilling river ride that winds through Europa-inspired ice caverns and tunnels. Feel the rush of the current as you explore this icy wonderland, complete with glowing ice formations and hidden surprises.</p>
+         <p class="text hidden" style="font-size: 15px; text-align: left">Navigate through our Ice Cavern Rapids, a thrilling river ride that winds through Europa-inspired ice caverns and tunnels. Feel the rush of the current as you explore this icy wonderland, complete with glowing ice formations and hidden surprises.</p>
          <p style="font-size: 15px; color: #5E6CAB; text-align: left"><b>5. Europa Springs</b></p>
-         <p style="font-size: 15px; text-align: left">Unwind in the Europa Springs, a series of naturally heated mineral pools. The warm, bubbling waters are enriched with Europa's unique minerals, offering therapeutic benefits and a perfect place to relax and rejuvenate.</p>
+         <p class="text hidden" style="font-size: 15px; text-align: left">Unwind in the Europa Springs, a series of naturally heated mineral pools. The warm, bubbling waters are enriched with Europa's unique minerals, offering therapeutic benefits and a perfect place to relax and rejuvenate.</p>
          <p style="font-size: 15px; color: #5E6CAB; text-align: left"><b>6. Dining and Refreshments</b></p>
-         <p style="font-size: 15px; text-align: left;">Savor delicious meals and refreshing beverages at our on-site cafe and snack bars. From quick bites to gourmet meals, our culinary offerings are designed to fuel your adventure and satisfy every craving</p>
+         <p class="text hidden" style="font-size: 15px; text-align: left;">Savor delicious meals and refreshing beverages at our on-site cafe and snack bars. From quick bites to gourmet meals, our culinary offerings are designed to fuel your adventure and satisfy every craving</p>
          <p style="font-size: 20px; color: #5E6CAB; text-align: left"><b>Additional Information</b></p>
          <p style="font-size: 15px; text-align: left"><b>Hours of Operation:</b> Open daily from 10 AM to 8 PM</p>
          <p style="font-size: 15px; text-align: left"><b>Group Size:</b> Suitable for individuals, families, and groups of all sizes</p>
          <p style="font-size: 15px; text-align: left"><b>Requirements:</b> Guests of all ages are welcome. Height and age restrictions apply for certain rides</p>
          <p style="font-size: 15px; text-align: left"><b>What to Bring:</b> Swimsuits and towels. Complimentary lockers and changing rooms are available</p>
+        <button class="read-more-btn">Read More</button>
     </div>
+
     <div class="title">
          <h1 style="font-size: 40px;">Martian Rover Rally</h1>
     </div>
@@ -156,27 +169,28 @@
          <p style="font-size: 15px; text-align: left"><b>One of our many high-tech Rovers (right)</b></p>
          <p style="font-size: 20px; color: #5E6CAB; text-align: left"><b>Activity Overview</b></p>
          <p style="font-size: 15px; color: #5E6CAB; text-align: left"><b>1. Pre-Race Briefing</b></p>
-          <p style="font-size: 15px; text-align: left">Kick off your Martian Rover Rally experience with a comprehensive briefing by our expert</p>
-          <p style="font-size: 15px; text-align: left"> racing team. Learn about the history and technology of Martian rovers, racing strategies,</p>
-          <p style="font-size: 15px; text-align: left">and essential safety protocols. You'll also get an introduction to the thrilling course you'll be</p>
-        <p style="font-size: 15px; text-align: left">navigating</p>
+          <p class="text hidden" style="font-size: 15px; text-align: left">Kick off your Martian Rover Rally experience with a comprehensive briefing by our expert</p>
+          <p class="text hidden" style="font-size: 15px; text-align: left"> racing team. Learn about the history and technology of Martian rovers, racing strategies,</p>
+          <p class="text hidden" style="font-size: 15px; text-align: left">and essential safety protocols. You'll also get an introduction to the thrilling course you'll be</p>
+        <p class="text hidden" style="font-size: 15px; text-align: left">navigating</p>
          <p style="font-size: 15px; color: #5E6CAB; text-align: left"><b>2. Suit-Up and Gear Check</b></p>
-          <p style="font-size: 15px; text-align: left">Gear up in our advanced space suits designed for comfort and mobility. Our team will assist</p>
-          <p style="font-size: 15px; text-align: left">you with your suit and perform a thorough check of your racing rover, ensuring all systems</p>
-          <p style="font-size: 15px; text-align: left">are go for an unforgettable race</p>
+          <p class="text hidden" style="font-size: 15px; text-align: left">Gear up in our advanced space suits designed for comfort and mobility. Our team will assist</p>
+          <p class="text hidden" style="font-size: 15px; text-align: left">you with your suit and perform a thorough check of your racing rover, ensuring all systems</p>
+          <p class="text hidden" style="font-size: 15px; text-align: left">are go for an unforgettable race</p>
          <p style="font-size: 15px; color: #5E6CAB; text-align: left"><b>3. Mars Rover Orientation</b></p>
-         <p style="font-size: 15px; text-align: left">Familiarize yourself with the controls and capabilities of your state-of-the-art Martian rover. These high-performance vehicles are equipped with advanced navigation systems, powerful motors, and rugged tires designed to tackle Mars's diverse terrain.</p>
+         <p class="text hidden" style="font-size: 15px; text-align: left">Familiarize yourself with the controls and capabilities of your state-of-the-art Martian rover. These high-performance vehicles are equipped with advanced navigation systems, powerful motors, and rugged tires designed to tackle Mars's diverse terrain.</p>
          <p style="font-size: 15px; color: #5E6CAB; text-align: left"><b>4. The Martian Track</b></p>
-         <p style="font-size: 15px; text-align: left">Head to the starting line of our meticulously designed Martian racetrack. The course features a variety of challenging terrains, including sandy dunes, rocky outcrops, and steep inclines, providing a true test of your driving skills and rover's capabilities.</p>
+         <p class="text hidden" style="font-size: 15px; text-align: left">Head to the starting line of our meticulously designed Martian racetrack. The course features a variety of challenging terrains, including sandy dunes, rocky outcrops, and steep inclines, providing a true test of your driving skills and rover's capabilities.</p>
          <p style="font-size: 15px; color: #5E6CAB; text-align: left"><b>5. Rover Racing</b></p>
-         <p style="font-size: 15px; text-align: left">Experience the thrill of high-speed racing as you navigate the Martian landscape. Compete against other racers in a series of timed laps, aiming for the fastest completion time. Feel the rush as you maneuver through sharp turns, accelerate over open plains, and conquer rugged obstacles.</p>
+         <p class="text hidden" style="font-size: 15px; text-align: left">Experience the thrill of high-speed racing as you navigate the Martian landscape. Compete against other racers in a series of timed laps, aiming for the fastest completion time. Feel the rush as you maneuver through sharp turns, accelerate over open plains, and conquer rugged obstacles.</p>
          <p style="font-size: 15px; color: #5E6CAB; text-align: left"><b>6. Victory Lap Awards Ceremony</b></p>
-         <p style="font-size: 15px; text-align: left;">Conclude your Martian Rover Rally with a celebratory victory lap. Gather at the finish line for an awards ceremony, where top racers will be recognised with medals and exclusive Voyager Hotel merchandise. Every participant will receive a personalised certificate of completion as a memento of their Martian adventure.</p>
+         <p class="text hidden" style="font-size: 15px; text-align: left;">Conclude your Martian Rover Rally with a celebratory victory lap. Gather at the finish line for an awards ceremony, where top racers will be recognised with medals and exclusive Voyager Hotel merchandise. Every participant will receive a personalised certificate of completion as a memento of their Martian adventure.</p>
          <p style="font-size: 20px; color: #5E6CAB; text-align: left"><b>Additional Information</b></p>
          <p style="font-size: 15px; text-align: left"><b>Duration:</b> 2 hours (including briefing, orientation, and racing)</p>
          <p style="font-size: 15px; text-align: left"><b>Group size:</b> Up to 10 participants per race</p>
          <p style="font-size: 15px; text-align: left"><b>Requirements:</b> Guests must be at least 16 years old and in good health. A brief medical screening will be conducted prior to the activity.</p>
          <p style="font-size: 15px; text-align: left"><b>What to Bring:</b> Comfortable clothing to wear under the space suit, closed-toe shoes and a competitive spirit!</p>
+        <button class="read-more-btn">Read More</button>
     </div>
     <div class="title">
          <h1 style="font-size: 40px;">Red Planet Cave Expedition</h1>
@@ -185,27 +199,29 @@
          <p style="font-size: 20px; text-align: left;">Dive into the depths of Mars with the Red Planet Cave Expedition, an awe-inspiring cave-diving adventure offered exclusively at the Voyager Hotel. Explore the hidden wonders of Mars's subterranean world, navigating through ancient water tubes and intricate cave systems formed millions of years ago. This activity promises an unforgettable journey into the mysterious and uncharted realm beneath the Martian surface.</p>
          <p style="font-size: 20px; color: #5E6CAB; text-align: left;"><b>Activity Overview</b></p>
          <p style="font-size: 15px; color: #5E6CAB; text-align: left;"><b>1. Pre-Diving Briefing</b></p>
-         <p style="font-size: 15px; text-align: left;">Begin your adventure with an informative briefing led by our seasoned cave-diving experts. Learn about the geology of Martian caves, the history of Martian exploration, and essential safety protocols. Gain insights into the fascinating formations and potential discoveries awaiting you underground</p>
+         <p class="text hidden" style="font-size: 15px; text-align: left;">Begin your adventure with an informative briefing led by our seasoned cave-diving experts. Learn about the geology of Martian caves, the history of Martian exploration, and essential safety protocols. Gain insights into the fascinating formations and potential discoveries awaiting you underground</p>
          <p style="font-size: 15px; color: #5E6CAB; text-align: left;"><b>2. Suit-Up and Equipment Check</b></p>
-         <p style="font-size: 15px; text-align: left;">Gear up in our state-of-the-art cave diving suits designed for comfort and mobility in the unique Martian environment. Our team will assist you in donning your suit and conducting a thorough check of your diving equipment, ensuring systems are ready for a safe and successful dive</p>
+         <p class="text hidden" style="font-size: 15px; text-align: left;">Gear up in our state-of-the-art cave diving suits designed for comfort and mobility in the unique Martian environment. Our team will assist you in donning your suit and conducting a thorough check of your diving equipment, ensuring systems are ready for a safe and successful dive</p>
          <p style="font-size: 15px; color: #5E6CAB; text-align: left;"><b>3. Mars Descent Orientation</b></p>
-         <p style="font-size: 15px; text-align: left;">Familiarise yourself with the advanced equipment you'll be using, including portable life support systems, specialised helmets with built-in lights, and navigational tools. Receive a demonstration on how to maneuver through tight spaces and ascend or descend safely into the Martian caves.</p>
+         <p class="text hidden" style="font-size: 15px; text-align: left;">Familiarise yourself with the advanced equipment you'll be using, including portable life support systems, specialised helmets with built-in lights, and navigational tools. Receive a demonstration on how to maneuver through tight spaces and ascend or descend safely into the Martian caves.</p>
          <p style="font-size: 15px; color: #5E6CAB; text-align: left;"><b>4. Enter the Water Tubes</b></p>
-         <p style="font-size: 15px; text-align: left;">Descend into the ancient water tubes of Mars, where the adventure truly begins. These expansive tunnels, formed by volcanic activity eons ago, offer a surreal and otherworldly landscape. The cool, dimly lit environment creates an atmosphere of mystery and exploration.</p>
+         <p class="text hidden" style="font-size: 15px; text-align: left;">Descend into the ancient water tubes of Mars, where the adventure truly begins. These expansive tunnels, formed by volcanic activity eons ago, offer a surreal and otherworldly landscape. The cool, dimly lit environment creates an atmosphere of mystery and exploration.</p>
          <p style="font-size: 15px; color: #5E6CAB; text-align: left;"><b>5. Cave Exploration</b></p>
-         <p style="font-size: 15px; text-align: left;">Navigate through the intricate network of Martian caves. encountering stunning rock formations, crystal deposits, and potential signs of past lava activity. Marvel at the breathtaking beauty and geological diversity of the subterranean world as you delve deeper into the cave system.</p>
+         <p class="text hidden" style="font-size: 15px; text-align: left;">Navigate through the intricate network of Martian caves. encountering stunning rock formations, crystal deposits, and potential signs of past lava activity. Marvel at the breathtaking beauty and geological diversity of the subterranean world as you delve deeper into the cave system.</p>
          <p style="font-size: 15px; color: #5E6CAB; text-align: left;"><b>6. Subterranean Challenges</b></p>
-         <p style="font-size: 15px; text-align: left;">Encounter a series of thrilling challenges designed to test your skills and agility. Squeeze through narrow passages, climb down steep inclines, and rappel down vertical shafts, all while guided by our experienced cave-diving team. Overcome these obstacles to unlock hidden chambers and discover more of Mars's underground secrets.</p>
+         <p class="text hidden" style="font-size: 15px; text-align: left;">Encounter a series of thrilling challenges designed to test your skills and agility. Squeeze through narrow passages, climb down steep inclines, and rappel down vertical shafts, all while guided by our experienced cave-diving team. Overcome these obstacles to unlock hidden chambers and discover more of Mars's underground secrets.</p>
          <p style="font-size: 15px; color: #5E6CAB; text-align: left"><b>7. Scientific Discovery</b></p>
-         <p style="font-size: 15px; text-align: left;">Participate in the excitement of potential scientific discovery as you explore. Collect samples of Martian rock and soil, observe unique mineral formations, and keep an eye out for any signs of ancient microbial life. Contribute to ongoing research and gain a deeper understanding of Mars's geological history.</p>
+         <p class="text hidden" style="font-size: 15px; text-align: left;">Participate in the excitement of potential scientific discovery as you explore. Collect samples of Martian rock and soil, observe unique mineral formations, and keep an eye out for any signs of ancient microbial life. Contribute to ongoing research and gain a deeper understanding of Mars's geological history.</p>
          <p style="font-size: 15px; color: #5E6CAB; text-align: left;"><b>8. Return and Reflect</b></p>
-         <p style="font-size: 15px; text-align: left;">Conclude your expedition with a triumphant ascent back to the surface. Reflect on your discoveries and experiences during a debriefing session, where you can share your observations and insights with fellow explorers. Receive a personalised certificate of completion and a souvenir photo of your cave-diving adventure.</p>
+         <p class="text hidden" style="font-size: 15px; text-align: left;">Conclude your expedition with a triumphant ascent back to the surface. Reflect on your discoveries and experiences during a debriefing session, where you can share your observations and insights with fellow explorers. Receive a personalised certificate of completion and a souvenir photo of your cave-diving adventure.</p>
          <p style="font-size: 20px; color: #5E6CAB; text-align: left"><b>Additional Information</b></p>
          <p style="font-size: 15px; text-align: left"><b>Duration:</b> 3 hours (including briefing, descent, exploration, and ascent)</p>
          <p style="font-size: 15px; text-align: left"><b>Group Size:</b> Up to 6 participants per expedition</p>
          <p style="font-size: 15px; text-align: left"><b>Requirements:</b> Guests must be at least 18 years old and in good health. A brief medical screening will be conducted prior to the activity.</p>
          <p style="font-size: 15px; text-align: left"><b>What to Bring:</b> Comfortable clothing to wear under the diving suit, sturdy footwear, and a sense of adventure!</p>
+        <button class="read-more-btn">Read More</button>
      </div>
+
 
 <div class="image-stack">
     <img src="../static/images/diving1.jpg" alt="Image 4" class="stacked-image">
@@ -214,9 +230,19 @@
 
 </div>
 
-<div class="book">
-        <p class="book-button" style="font-size: 30px; text-align: center;"><a href="activitiesPage.html" class="button">Back to Top</a></p>
-    </div>
+<div class="data">
+            <a href="#top" class="hire" id="backToTop">Back To Top</a>
+        </div>
+
+    <script>
+        document.getElementById('backToTop').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 
 
 
