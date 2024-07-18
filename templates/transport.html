@@ -23,7 +23,7 @@
             padding: 15px;
             border-radius: 10px;
             margin: 15px;
-            font-size: 16px;
+            font-size: 30px;
         }
         .content {
             display: flex;
@@ -45,10 +45,9 @@
         }
         h1, h2 {
             margin: 20px;
-            color: #7B4BA5;
-            text-shadow: 1px 1px 2px #000;
-            font-size: 30px;
-            text-align: left;
+            color: #F2F5EA;
+            text-shadow: 2px 2px 4px #000;
+            font-size: 40px;
         }
         footer {
             margin-top: 30px;
@@ -80,24 +79,26 @@
         .checklist {
             margin: 20px;
             padding: 20px;
-            background-color: white; /* White background */
+            background-color: #F5F5DC; /* Cream background */
             color: black;
             border-radius: 10px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            color: black; /* Black writing */
+
         }
         .checklist ul {
             padding: 0;
             margin: 0;
-            list-style: none;
-            font-size: 20px;
-            background-color: white;
+            list-style:none;
+
         }
         .checklist li {
             margin: 10px 0;
             display: flex;
             align-items: left;
+            background-color:white;
         }
         .checklist li i {
             color: green;
@@ -107,8 +108,8 @@
         .notice {
             margin: 20px;
             padding: 20px;
-            background-color: white;
-            color: #F2F5EA;
+            background-color: white
+            color: blue;
             border-radius: 10px;
             text-align: center;
         }
@@ -118,7 +119,7 @@
         .booking {
             margin: 20px;
             padding: 20px;
-            background-color: white;
+            background-color: white
             color: black;
             border-radius: 10px;
             text-align: center;
@@ -181,165 +182,163 @@
             text-align: center;
         }
 
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #5E6CAB;
-        }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5E6CAB;
+}
 
-        li {
-            float: left;
-        }
+li {
+  float: left;
+}
 
-        li a, .dropbtn {
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-        li a:hover, .dropdown:hover .dropbtn {
-            background-color: #425CCF;
-        }
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #425CCF;
+}
 
-        .dropdown {
-            display: inline-block;
-        }
+.dropdown {
+  display: inline-block;
+}
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #111;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #111;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
-        .dropdown-content a {
-            color: #5E6CAB;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
+.dropdown-content a {
+  color: #5E6CAB;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
 
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
+.dropdown-content a:hover {background-color: #f1f1f1}
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-        /* Change the link color to #111 (black) on hover */
-        li a:hover:not(.active) {
-            background-color: #425CCF;
-        }
+/* Change the link color to #111 (black) on hover */
+li a:hover:not(.active) {
+  background-color: #425CCF;
+}
 
-        .active {
-            background-color: #7B4BA5;
-        }
+.active {
+  background-color: #7B4BA5;
+}
     </style>
 </head>
 <body>
 <ul>
-     <li><a href="index.html">Home</a></li>
-     <li><a href="about.html">About</a></li>
-     <li><a class="active" href="transport.html">Transport</a></li>
-     <li><a href="activitiesPage.html">Activities</a></li>
-     <li><a href="contact.html">Contact</a></li>
-     <li class="dropdown"><a href="accommodation" class="dropbtn">Accommodation</a>
-        <div class="dropdown-content">
-            <a href="mars.html">Mars</a>
-            <a href="venus.html">Venus</a>
-            <a href="jupiter.html">Jupiter</a>
-            <a href="saturn.html">Saturn</a>
-        </div>
+     <li><a href="/">Home</a></li>
+     <li><a href="/about">About</a></li>
+     <li><a class="active"  href="/transport">Transport</a></li>
+     <li><a href="/activitiesPage">Activities</a></li>
+     <li><a href="/contact">Contact</a></li>
+     <li class="dropdown"><a  href="/accommodation" class="dropbtn">Accommodation</a>
+      <div class="dropdown-content">
+       <a href="/mars">Mars</a>
+       <a href="/venus">Venus</a>
+       <a href="/jupiter">Jupiter</a>
+       <a href="/saturn">Saturn</a>
+      </div>
     </li>
 </ul>
 
-<h1>Transport</h1>
 
-<div class="content">
-    <div>
-        <p>
-            Arriving at the Voyager Hotel on the Moon becomes an extraordinary experience with the advent of the futuristic Lunar Glide vehicle. This state-of-the-art spacecraft combines sleek design with advanced technology, effortlessly transitioning from Earth’s atmosphere into lunar space. Equipped with magnetic levitation drives and a robust ion propulsion system, the Lunar Glide offers a smooth, high-speed journey through space, complete with panoramic windows showcasing breathtaking cosmic vistas. Upon nearing the Moon, the vehicle elegantly descends and docks with the Voyager Hotel’s orbital landing platform. Guests disembark to a seamless transition into the hotel’s luxurious environment, all while marveling at the stunning lunar landscape that unfolds before them.
-        </p>
+    <h1>Transport</h1>
+
+    <div class="content">
+        <div>
+            <p>
+                Arriving at the Voyager Hotel on the Moon becomes an extraordinary experience with the advent of the futuristic Lunar Glide vehicle. This state-of-the-art spacecraft combines sleek design with advanced technology, effortlessly transitioning from Earth’s atmosphere into lunar space. Equipped with magnetic levitation drives and a robust ion propulsion system, the Lunar Glide offers a smooth, high-speed journey through space, complete with panoramic windows showcasing breathtaking cosmic vistas. Upon nearing the Moon, the vehicle elegantly descends and docks with the Voyager Hotel’s orbital landing platform. Guests disembark to a seamless transition into the hotel’s luxurious environment, all while marveling at the stunning lunar landscape that unfolds before them.
+            </p>
+        </div>
+        <img src="/static/images/rocket taking off.webp" alt="Rocket taking off">
     </div>
-    <img src="/static/images/rocket taking off.webp" alt="Rocket taking off">
-</div>
 
-<div class="text3">
+<div class="text3 " >
     <h1>What will take you to the Moon</h1>
 </div>
 
-<div class="content">
-    <div>
+    <div class="content">
+        <div>
+            <p>
+                The new advanced rocket ship, Stellar Voyager, revolutionizes lunar travel with its cutting-edge technology and unparalleled speed. Designed with a sleek, aerodynamic structure, the Stellar Voyager is equipped with powerful fusion engines that reduce the journey to the Moon to mere hours. Inside, the spacecraft offers luxurious cabins, state-of-the-art entertainment systems, and panoramic windows that provide breathtaking views of space. Its advanced navigation and safety systems ensure a smooth and secure trip, while eco-friendly propulsion minimizes the environmental impact. As passengers approach the Moon, they experience a seamless transition from high-speed travel to a gentle lunar landing, ready to explore the mysteries of the lunar surface.
+            </p>
+        </div>
+    </div>
+
+    <div class="moon-car-section">
+        <img src="/static/images/moon car.avif" alt="Moon car">
         <p>
-            The new advanced rocket ship, Stellar Voyager, revolutionizes lunar travel with its cutting-edge technology and unparalleled speed. Designed with a sleek, aerodynamic structure, the Stellar Voyager is equipped with powerful fusion engines that reduce the journey to the Moon to mere hours. Inside, the spacecraft offers luxurious cabins, state-of-the-art entertainment systems, and panoramic windows that provide breathtaking views of space. Its advanced navigation and safety systems ensure a smooth and secure trip, while eco-friendly propulsion minimizes the environmental impact. As passengers approach the Moon, they experience a seamless transition from high-speed travel to a gentle lunar landing, ready to explore the mysteries of the lunar surface.
+            Upon landing on the moon, you'll be welcomed by the sleek, autonomous Lunar Rover 3000, a futuristic car designed for swift, comfortable lunar travel. This cutting-edge vehicle, powered entirely by solar energy, effortlessly glides over the moon's surface at remarkable speeds. With its advanced navigation system and plush interior, the Lunar Rover 3000 ensures a smooth, enjoyable ride, allowing you to relax and marvel at the breathtaking lunar landscape. In mere moments, you'll arrive at your destination, the luxurious Voyager Hotel, ready to begin your extraordinary stay on the moon.
         </p>
     </div>
-</div>
 
-<div class="moon-car-section">
-    <img src="/static/images/moon car.avif" alt="Moon car">
-    <p>
-        Upon landing on the moon, you'll be welcomed by the sleek, autonomous Lunar Rover 3000, a futuristic car designed for swift, comfortable lunar travel. This cutting-edge vehicle, powered entirely by solar energy, effortlessly glides over the moon's surface at remarkable speeds. With its advanced navigation system and plush interior, the Lunar Rover 3000 ensures a smooth, enjoyable ride, allowing you to relax and marvel at the breathtaking lunar landscape. In mere moments, you'll arrive at your destination, the luxurious Voyager Hotel, ready to begin your extraordinary stay on the moon.
-    </p>
-</div>
+    <div class="checklist">
+        <style></style>
+        <h2>What should our passengers expect</h2>
+        <ul>
+            <li><i class="fas fa-check-circle"></i> Always arrive on time          .</li>
+            <li><i class="fas fa-check-circle"></i> Guaranteed smooth flight          .</li>
+            <li><i class="fas fa-check-circle"></i> 5 star service while on board by our cabin crew             .</li>
+        </ul>
+    </div>
 
-<div class="checklist">
-    <h2>What should our passengers expect</h2>
-    <ul>
-        <li><i class="fas fa-check-circle"></i> Always arrive on time.</li>
-        <li><i class="fas fa-check-circle"></i> Guaranteed smooth flight.</li>
-        <li><i class="fas fa-check-circle"></i> 5 star service while on board by our cabin crew.</li>
-    </ul>
-</div>
 
-<div class="text">
-    <h2>Ready to embark on your lunar adventure? </h2>
-</div>
-<div class="booking">
-    <button onclick="location.href='transportbookings.html'">Book Now Today</button>
-</div>
+ <div class="text">
+        <h2>Ready to embark on your lunar adventure? </h2>
+ </div>
+    <div class="booking">
+        <button onclick="location.href='transportbookings.html'">Book Now Today</button>
+    </div>
 
-<div class="price-table">
-    <h2>Prices</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Destination</th>
-                <th>Price</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Mars</td>
-                <td>$100</td>
-            </tr>
-            <tr>
-                <td>Venus</td>
-                <td>$125</td>
-            </tr>
-            <tr>
-                <td>Jupiter</td>
-                <td>$115</td>
-            </tr>
-            <tr>
-                <td>Saturn</td>
-                <td>$130</td>
-            </tr>
-        </tbody>
-    </table>
-    <p class="note">Extra luggage bags are $10 each.</p>
-</div>
+    <div class="price-table">
+        <h2>Prices</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Destination</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mars</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Venus</td>
+                    <td>$125</tr>
+                <tr>
+                    <td>Jupiter</td>
+                    <td>$115</td>
+                </tr>
+                <tr>
+                    <td>Saturn</td>
+                    <td>$130</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note">Extra luggage bags are $10 each.</p>
+    </div>
 
-<footer>
 
-</footer>
 </body>
 </html>
