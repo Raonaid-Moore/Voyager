@@ -77,6 +77,26 @@ def activityBook():
     print("in activity book")
     return render_template('activityBook.html')
 
+@app.route('/kidsActivities')
+def kidsActivities():
+    print("in kids activities")
+    return render_template('kidsActivities.html')
+
+@app.route('/JungleGym')
+def JungleGym():
+    print("in Jungle Gym")
+    return render_template('JungleGym.html')
+
+@app.route('/LowGravityTrampoline')
+def LowGravityTrampoline():
+    print("in Low Gravity Trampoline")
+    return render_template('LowGravityTrampoline.html')
+
+@app.route('/ZeroGravityBallPit')
+def ZeroGravityBallPit():
+    print("in Zero Gravity Ball Pit")
+    return render_template('ZeroGravityBallPit.html')
+
 @app.route('/booking', methods=['POST'])
 def submit_booking():
     name = request.form['name']
@@ -100,7 +120,6 @@ def submit_booking():
         print(e)
         print('An error occurred while booking the activity.')
     return f"Booking received for {name} to {activity} on {date} at {time}."
-
 
 
 
