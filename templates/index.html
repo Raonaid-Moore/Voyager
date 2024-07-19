@@ -104,55 +104,6 @@
 
 
 
-<section id="reviews">
-    <h2>Guest Reviews and Testimonials</h2>
-    <div class="carousel-container">
-        <div class="carousel-slide">
-            <div class="review">
-                <p class="review-text">"Amazing stay! The staff was friendly and the rooms were immaculate. Will definitely come back!"</p>
-                <p class="review-author">- John Doe</p>
-            </div>
-            <div class="review">
-                <p class="review-text">"A wonderful experience from start to finish. The dining options were fantastic and the spa was very relaxing."</p>
-                <p class="review-author">- Jane Smith</p>
-            </div>
-            <div class="review">
-                <p class="review-text">"Excellent location, close to all major attractions. The service was top-notch. Highly recommended!"</p>
-                <p class="review-author">- Alex Johnson</p>
-            </div>
-            <!-- Add more reviews as needed -->
-        </div>
-    </div>
-    <button id="prevReview" class="carousel-control prev" onclick="prevReviewSlide()">&#10094;</button>
-    <button id="nextReview" class="carousel-control next" onclick="nextReviewSlide()">&#10095;</button>
-
-
- <script>
-    // Reviews carousel
-    let reviewIndex = 0;
-    const reviewSlides = document.querySelectorAll('#reviews .carousel-slide .review');
-    const totalReviewSlides = reviewSlides.length;
-
-    function showReviewSlide(index) {
-        const slideWidth = reviewSlides[0].clientWidth;
-        const newTransform = -index * slideWidth;
-        document.querySelector('#reviews .carousel-slide').style.transform = `translateX(${newTransform}px)`;
-    }
-
-    function nextReviewSlide() {
-        reviewIndex = (reviewIndex + 1) % totalReviewSlides;
-        showReviewSlide(reviewIndex);
-    }
-
-    function prevReviewSlide() {
-        reviewIndex = (reviewIndex - 1 + totalReviewSlides) % totalReviewSlides;
-        showReviewSlide(reviewIndex);
-    }
-
-    // Initial display for reviews carousel
-    showReviewSlide(reviewIndex);
- </script>
-</section>
 
 
 
