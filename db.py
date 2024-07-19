@@ -132,6 +132,10 @@ def submit_booking():
 def login():
     return render_template('login.html')
 
+@app.route('/payment')
+def payment():
+    return render_template('payment.html')
+
 @app.route('/login', methods=['POST'])
 def submit_login():
     try:
