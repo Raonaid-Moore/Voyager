@@ -137,6 +137,10 @@ def bookings():
     print("in bookings")
     return render_template('bookings.html')
 
+@app.route('/payment')
+def payment():
+    return render_template('payment.html')
+
 @app.route('/booking', methods=['POST'])
 def submit_booking():
     name = request.form['name']
