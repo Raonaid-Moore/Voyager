@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 
+from contact import Message
+
 USERNAME = 'root'
 PASSWORD = ''
 HOST = 'localhost'
@@ -100,9 +102,6 @@ def submit_booking():
         print(e)
         print('An error occurred while booking the activity.')
     return f"Booking received for {name} to {activity} on {date} at {time}."
-
-
-
 
 if __name__ == '__main__':
     app.run(debug=True)
