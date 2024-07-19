@@ -218,3 +218,73 @@ span {
 .data{
   float: center;
 }
+
+/*REVIEWS*/
+#reviews {
+    background-color: #7B4BA5;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+#reviews h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #F2F5EA
+}
+
+.carousel-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.review {
+    min-width: 100%;
+    box-sizing: border-box;
+    background: #F2F5EA;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.review-author {
+    font-size: 14px;
+    font-weight: bold;
+    color: #425CCF;
+}
+
+.carousel-control {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
