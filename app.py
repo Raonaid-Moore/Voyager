@@ -97,6 +97,46 @@ def ZeroGravityBallPit():
     print("in Zero Gravity Ball Pit")
     return render_template('ZeroGravityBallPit.html')
 
+@app.route('/spacesuit')
+def spacesuit():
+    print("in spacesuit")
+    return render_template('spacesuit.html')
+
+@app.route('/transportbookings')
+def transportbookings():
+    print("in transport bookings")
+    return render_template('transportbookings.html')
+
+@app.route('/restaurant')
+def restaurant():
+    print("in restaurant")
+    return render_template('restaurant.html')
+
+@app.route('/offers')
+def offers():
+    print("in offers")
+    return render_template('offers.html')
+
+@app.route('/privacy')
+def privacy():
+    print("in privacy")
+    return render_template('privacy.html')
+
+@app.route('/funfacts')
+def funfacts():
+    print("in Fun Facts")
+    return render_template('funfacts.html')
+
+@app.route('/astronaut')
+def astronaut():
+    print("in astronaut")
+    return render_template('astronaut.html')
+
+@app.route('/bookings')
+def bookings():
+    print("in bookings")
+    return render_template('bookings.html')
+
 @app.route('/booking', methods=['POST'])
 def submit_booking():
     name = request.form['name']
