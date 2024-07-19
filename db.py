@@ -26,6 +26,22 @@ def __init__(self, select_room, email_address, check_in, check_out):
     self.check_in = check_in
     self.check_out = check_out
 
+class Payment(db.Model):
+    __tablename__ = 'payment_table'
+    payment_id = db.Column(db.Integer, primary_key=True)
+    name_on_card = db.Column(db.String(40), nullable=False)
+    card_number = db.Column(db.String(40), nullable=False)
+    expiry_date = db.Column(db.String(40), nullable=False)
+    cvv= db.Column(db.String(40), nullable=False)
+    amount = db.Column(db.String(40), nullable=False)
+
+def __init__(self, name_on_card, card_number, expiry_date, cvv, amount):
+    self.name_on_card = name_on_card
+    self.card_number = card_number
+    self.expiry_date = expiry_date
+    self.cvv = cvv
+    self.amount = amount
+
 class Login(db.Model):
     __tablename__ = 'login_table'
     login_id = db.Column(db.Integer, primary_key=True)
@@ -106,10 +122,10 @@ def bookings():
 @app.route('/bookings', methods=['POST'])
 def submit_booking():
     try:
-        select_room = request.form['select_room']
-        email_address = request.form['email_address']
-        check_in = request.form['check_in']
-        check_out = request.form['check_out']
+        select_room = request.form['select room']
+        email_address = request.form['email address']
+        check_in = request.form['check in']
+        check_out = request.form['check out']
 
         new_booking = Booking(
             select_room=select_room,
@@ -126,15 +142,44 @@ def submit_booking():
         db.session.rollback()
         print(e)
         print('An error occurred while booking the class.')
-    return f"Booking received for {email_address} to {select_room} from {check_in} to {check_out}."
+    return f"Booking received for {name_on_card} to {select_room} from {check_in} to {check_out}."
+
+@app.route('/payment')
+def payment():
+    return render_template('payment.html')
+
+@app.route('/payment', methods=['POST'])
+def submit_payment():
+    try:
+        name_on_card = request.form['name_on_card']
+        card_number = request.form['card_number']
+        expiry_date = request.form['expiry_date']
+        cvv = request.form['cvv']
+        amount = request.form['amount']
+
+        new_payment = Payment(
+            name_on_card=name_on_card,
+            card_number=card_number,
+            expiry_date=expiry_date,
+            cvv=cvv,
+            amount=amount,
+        )
+
+        db.session.add(new_payment)
+        db.session.commit()
+        print('Payment Successful, Booking has been made!')
+    except Exception as e:
+        # If an error occurs, roll back the transaction
+        db.session.rollback()
+        print(e)
+        print('An error occurred during booking.')
+    return f"Booking received for {email_address} from {check_in_date} to {check_out_date}."
 
 @app.route('/login')
 def login():
     return render_template('login.html')
 
-@app.route('/payment')
-def payment():
-    return render_template('payment.html')
+
 
 @app.route('/login', methods=['POST'])
 def submit_login():
