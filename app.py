@@ -77,11 +77,6 @@ def activityBook():
     print("in activity book")
     return render_template('activityBook.html')
 
-@app.route('/activityBook')
-def activityBook():
-    print("in activity book")
-    return render_template('activityBook.html')
-
 @app.route('/funfacts')
 def funfacts():
     print("in funfacts")
@@ -95,6 +90,11 @@ def astronaut():
 
 
 
+
+@app.route('/payment')
+def payment():
+    print("in payment")
+    return render_template('payment.html')
 
 @app.route('/booking', methods=['POST'])
 def submit_booking():
