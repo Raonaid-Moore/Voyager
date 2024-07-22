@@ -5,166 +5,222 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-        body {
-            background-color: #F2F5EA;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            color: #FFFFFF;
-            margin: 0;
-            padding: 0;
-            font-family: "Poppins", sans-serif;
-            font-size: 18px;
-        }
-        p {
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 15px;
-            border-radius: 10px;
-            margin: 15px;
-        }
-        .content {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: flex-start;
-            margin: 20px 0;
-        }
-        .content img {
-         margin-top: 30px;
-            width: 50%;
-            margin: 15px;
-            border-radius: 10px;
-        }
-        .content div {
-            flex: 1;
-            width: 60%;
-            margin: 15px;
-        }
-        h1, h2 {
-            margin: 20px;
-            color: #7B4BA5;
-            font-size: 24px;
-        }
-        footer {
-            margin-top: 30px;
-            text-align: center;
-            color: #000000;
-            font-size: 20px;
-        }
-        .moon-car-section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            margin: 20px 0;
-        }
-        .moon-car-section img {
-            max-width: 300px;
-            height: auto;
-            margin: 15px;
-            border-radius: 10px;
-        }
-        .moon-car-section p {
-            flex: 1;
-            min-width: 300px;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: #536CAB;
-            padding: 15px;
-            border-radius: 10px;
-            margin: 15px;
-        }
-        .checklist {
-            margin: 20px;
-            padding: 20px;
 
-            color: white;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            font-size: 30px;
-        }
-        .checklist ul {
+body {
+       background-color: #F2F5EA;
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       margin: 0;
+       padding: 0;
+       font-family: "Poppins", sans-serif;
+
+  }
+
+
+.Transport {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 50px 0;
+  /*background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")*/
+}
+
+.pic {
+  float: left;
+  height: auto;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.Transport1 {
+  width: 1130px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ /*background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")*/
+}
+
+.text {
+  width: 540px;
+}
+
+.text h2 {
+  color: #7B4BA5;
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  /*background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")*/
+}
+
+
+
+
+.text p {
+  color: #000;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  /*background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")*/
+}
+
+
+
+
+.how {
+  width: 1400px;
+  max-width: 85%;
+  margin: 0 auto;
+  float: center;
+  align-items: right;
+  /* background-image: url("https://removal.ai/wp-content/uploads/2021/05/image1.png")*/
+
+
+}
+
+.text1 {
+     width: 540px;
+    align-items: center;
+}
+
+.team-pic {
+  float: right;
+  height: auto;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.text1 h2 {
+  color: #7B4BA5;
+  font-size: 80px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.getting there {
+  color: #000;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  padding: 90px 0;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+/* Checklist styles */
+.checklist {
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.checklist h3{
+color: #7B4BA5;
+font-size: 30px;
+font-weight: 600;
+text-align:left;
+}
+
+
+.checklist ul {
+    list-style-type: none;
+    padding: 20px;
+    margin: 10px;
+}
+
+.checklist li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.checklist i {
+    margin-right: 10px;
+    color: green;
+}
+
+/* Price table styles */
+.price-table {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.price-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.price-table th, .price-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.price-table th {
+    background-color: #f2f2f2;
+}
+
+.price-table p3 {
+
+}
+
+.price-table .note {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Booking button */
+.booking {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.booking button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.booking button:hover {
+    background-color: #45a049;
+}
+
+
+
+/*navbar*/
+
+ul.navbar {
+            background-color: #333;
+            overflow: hidden;
+            list-style-type: none;
             padding: 0;
             margin: 0;
-            list-style: none;
-        }
-        .checklist li {
-            margin: 10px 0;
-            display: flex;
-            align-items: left;
-            color: black;
-        }
-        .checklist li i {
-            color: #000000;
-            margin-right: 10px;
-        }
-        .notice {
-            margin: 20px;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: blue;
-            border-radius: 10px;
             text-align: center;
-            font-size: 40px;
         }
-        .notice p {
-            color: white;
-        }
-        .booking {
-            margin: 20px;
-            padding: 20px;
-            color: black;
-            border-radius: 10px;
-            text-align: center;
-            font-size: 20px;
-        }
-        .booking button {
-            background-color: #4B4BA5;
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            font-size: 18px;
-            transition: background-color 0.3s;
-        }
-        .booking button:hover {
-            background-color: #3A3A94;
-        }
-        .price-table {
-            margin: 20px;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            border-radius: 10px;
-            text-align: center;
-            font-size: 20px;
-        }
-        .price-table table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .price-table th, .price-table td {
-            border: 1px solid #ddd;
-            padding: 10px;
-        }
-        .price-table th {
-            background-color: #333;
-            color: white;
-        }
-        .price-table tr:hover {
-            background-color: #444;
-        }
-        .price-table td {
-            color: #800080; /* Purple color for prices */
-        }
-        .price-table note {
-            display: block;
-            margin-top: 10px;
-            color: #5E6CAB;
-        }
+
 
 ul {
   list-style-type: none;
@@ -197,7 +253,7 @@ li a:hover, .dropdown:hover .dropbtn {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #5E6CAB;
+  background-color: #F2F5EA;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -219,18 +275,12 @@ li a:hover, .dropdown:hover .dropbtn {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover:not(.active) {
-  background-color: #111;
+  background-color: #425CCF;
 }
 
 .active {
   background-color: #7B4BA5;
 }
-
-.navbar-right{
-    float: right;
-    align:right;
-}
-
     </style>
 </head>
 <body>
