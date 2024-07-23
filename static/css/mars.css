@@ -33,7 +33,7 @@ img {
 }
 
 body{
-    background-color:red;
+    background-color:white;
 }
 <style>
 div.gallery {
@@ -96,7 +96,7 @@ body {
 }
 
 .text h1 {
-  color: white; /* Ensures the heading text is readable */
+  color: purple; /* Ensures the heading text is readable */
 }
 
 div.gallery {
@@ -115,7 +115,7 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
-  color: white; /* Ensures the description text is readable */
+  color: black; /* Ensures the description text is readable */
 }
 
 * {

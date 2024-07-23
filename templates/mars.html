@@ -3,6 +3,43 @@
 <head>
   <title>The Voyager</title>
   <link rel="stylesheet" href="/static/css/mars.css">
+  <style>
+    /* Add the CSS here for the hover effect */
+    .gallery img {
+      transition: transform 0.2s; /* Animation */
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1); /* Zoom in effect */
+    }
+
+    /* Additional CSS for layout */
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+
+    .gallery {
+      border: 1px solid #ccc;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    .desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
 </head>
 <body>
  <ul>
@@ -36,112 +73,58 @@
 <html>
 <head>
   <style>
-    body {
-      background-color:#F2F5EA;
-      background-size: cover;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      color: blue; /* To ensure text is readable on the dark background */
+    /* Add the CSS here for the hover effect */
+    .gallery img {
+      transition: transform 0.2s; /* Animation */
     }
 
-    .container {
-      padding: 20px;
+    .gallery img:hover {
+      transform: scale(1.1); /* Zoom in effect */
     }
 
-    .text h1 {
-      color:#7B4BA5; /* Ensures the heading text is readable */
-    }
-
-    div.gallery {
-      border: 1px solid #ccc;
-    }
-
-    div.gallery:hover {
-      border: 1px solid #777;
-    }
-
-    div.gallery img {
-      width: 100%;
-      height: auto;
-    }
-
-    div.desc {
-      padding: 15px;
-      text-align: center;
-      color: black; /* Ensures the description text is readable */
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
+    /* Additional CSS for layout */
     .responsive {
       padding: 0 6px;
       float: left;
       width: 24.99999%;
     }
 
-    @media only screen and (max-width: 700px) {
-      .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-      }
+    .gallery {
+      border: 1px solid #ccc;
     }
 
-    @media only screen and (max-width: 500px) {
-      .responsive {
-        width: 100%;
-      }
+    .gallery img {
+      width: 100%;
+      height: auto;
     }
 
-    .clearfix:after {
+    .desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .clearfix::after {
       content: "";
       display: table;
       clear: both;
     }
-
-    /* Star rating styles */
-    .star-rating {
-      direction: rtl;
-      display: inline-block;
-      padding: 20px;
-    }
-    .star-rating input[type="radio"] {
-      display: none;
-    }
-    .star-rating label {
-      color: grey;
-      font-size: 30px;
-      padding: 10px;
-      cursor: pointer;
-    }
-    .star-rating input[type="radio"]:checked ~ label {
-      color: gold;
-    }
-    .star-rating label:hover,
-    .star-rating label:hover ~ label {
-      color: gold;
-    }
   </style>
 </head>
 <body>
-
-<h2>Accommodation</h2>
 
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="../static/images/MARS BEDRROM.jpg">
       <img src="../static/images/MARS BEDRROM.jpg" alt="Mars Bedroom" width="100" height="100">
     </a>
-    <div class="desc">This luxurious bedroom will fit all of your needs during your stay with these soundproof walls and comfort, with top of the line mattresses. There are 800 of these rooms available throughout the hotel with 5 presidential suites</a>
-    </div>
+    <div class="desc">This luxurious bedroom will fit all of your needs during your stay with these soundproof walls and comfort, with top of the line mattresses. There are 800 of these rooms available throughout the hotel.</div>
   </div>
 </div>
 
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="../static/images/mars restaurant.avif">
-      <img src="../static/images/mars restaurant.avif" alt=" Mars Restaurant" width="600" height="400">
+      <img src="../static/images/mars restaurant.avif" alt="Mars Restaurant" width="600" height="400">
     </a>
     <div class="desc">The fine cuisine you will find here is incomparable to anything you have ever had before, varying from the best on Earth to the best across the galaxy. You will find multiple restaurants in the hotel, spaced apart as it is so big.</div>
   </div>
@@ -170,12 +153,14 @@
 <!-- Star Rating Section -->
 
 
-<!-- Booking Link Section -->
+  <!-- Booking Link Section -->
+  <div class="container" style="text-align: center; margin-top: 20px;">
+    <a href="/bookings" style="background-color: #964adb; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;">Book Your Stay Now</a>
+  </div>
 
-
-<div style="padding:6px;">
-  <p></p>
-  <p></p>
+  <div style="padding:6px;">
+    <p></p>
+    <p></p>
 </div>
 </body>
 </html>
