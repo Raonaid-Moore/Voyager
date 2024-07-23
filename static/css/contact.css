@@ -335,14 +335,14 @@ li a:hover, .dropdown:hover .dropbtn {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #F2F5EA;
+  background-color: #5E6CAB;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: #5E6CAB ;
+  color: #F2F5EA ;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -350,7 +350,7 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 
 .dropdown-content a:hover {
-background-color: #f1f1f1
+background-color: #5E6CAB
 }
 
 .dropdown:hover .dropdown-content {
@@ -359,11 +359,17 @@ background-color: #f1f1f1
 
 /* Change the link color to #111 (black) on hover */
 li a:hover:not(.active) {
-  background-color: #425CCF;
+  background-color: #111;
 }
 
 .active {
   background-color: #7B4BA5;
+}
+
+
+.navbar-right{
+    float: right;
+    align:right;
 }
 
 /*reviews*/

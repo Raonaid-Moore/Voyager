@@ -161,12 +161,18 @@ li a {
 
 
 li a:hover:not(.active) {
-  background-color: #425CCF;
+  background-color: #111;
 }
 
 .active {
-  background-color: #FF4500;
+  background-color: #7B4BA5;
 }
+
+.navbar-right{
+    float: right;
+    align:right;
+}
+
  /* Add styles for the dropdown menu */
     ul {
       list-style-type: none;

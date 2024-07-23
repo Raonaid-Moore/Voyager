@@ -248,7 +248,7 @@ li a:hover:not(.active) {
 </head>
 <body>
 <ul>
-     <li><a href="/">Home</a></li>
+     <li><a href="/index">Home</a></li>
      <li><a href="/about">About</a></li>
      <li><a class="active"  href="/transport">Transport</a></li>
      <li><a href="/activitiesPage">Activities</a></li>
@@ -262,75 +262,49 @@ li a:hover:not(.active) {
        <a href="/saturn">Saturn</a>
       </div>
     </li>
+     <li class="navbar-right"><a href="/login">Login</a></li>
+    <li class="navbar-right"><a href="/register">Register</a></li>
 </ul>
 
 
-    <h1>Transport</h1>
-
-    <div class="content">
-        <div>
-            <p>
-                Arriving at the Voyager Hotel on the Moon becomes an extraordinary experience
-                with the advent of the futuristic Lunar Glide vehicle. This state-of-the-art
-                spacecraft combines sleek design with advanced technology, effortlessly transitioning
-                from Earth’s atmosphere into lunar space. Equipped with magnetic levitation drives
-                and a robust ion propulsion system, the Lunar Glide offers a smooth,
-                high-speed journey through space, complete with panoramic windows showcasing
-                breathtaking cosmic vistas.
-            </p>
+<section class="Transport">
+      <div class="Transport1">
+        <img src="/static/images/rocket taking off.webp" alt="rocket taking off" class="pic" />
+        <div class="text">
+          <h2>Transport</h2>
+          <p>   Arriving at the Voyager Hotel on the Moon becomes an extraordinary experience with the advent of the futuristic Lunar Glide vehicle. This state-of-the-art spacecraft combines sleek design with advanced technology, effortlessly transitioning from Earth’s atmosphere into lunar space. Equipped with magnetic levitation drives
+                and a robust ion propulsion system, the Lunar Glide offers a smooth,high-speed journey through space, complete with panoramic windows showcasing
+                breathtaking cosmic vistas.</p>
         </div>
-        <img src="/static/images/rocket taking off.webp" alt="Rocket taking off">
+      </div>
+
+</section>
+  <section class="getting there">
+    <div class="how">
+      <img src="/static/images/moon car.avif" alt="moon car" class="team-pic" />
+      <div class="text1">
+        <h2>Arrival</h2>
+        <p>You'll be welcomed by the sleek, autonomous Lunar Rover 3000, a futuristic car designed for swift, comfortable lunar travel,
+            powered entirely by solar energy, effortlessly glides over the moon's surface at remarkable speeds. In mere moments, you'll arrive at your destination, the luxurious Voyager
+            Hotel, ready to begin your extraordinary stay on the moon.</p>
+      </div>
     </div>
+  </section>
 
-<div class="text3 " >
-    <h1>What will take you to the Moon</h1>
-</div>
-
-    <div class="content">
-        <div>
-            <p>
-                The new advanced rocket ship, Stellar Voyager, revolutionizes lunar travel with its
-                cutting-edge technology and unparalleled speed. Designed with a sleek, aerodynamic
-                structure, the Stellar Voyager is equipped with powerful fusion engines that reduce
-                the journey to the Moon to mere hours. Its advanced navigation and safety systems ensure a
-                smooth and secure trip, while eco-friendly propulsion minimizes the environmental
-                impact.
-            </p>
-        </div>
-    </div>
-
-    <div class="moon-car-section">
-        <img src="/static/images/moon car.avif" alt="Moon car">
-        <p>
-            You'll be welcomed by the sleek, autonomous Lunar Rover 3000,
-            a futuristic car designed for swift, comfortable lunar travel,
-            powered entirely by solar energy, effortlessly glides over the moon's surface at
-            remarkable speeds.
-            In mere moments, you'll arrive at your destination, the luxurious Voyager
-            Hotel, ready to begin your extraordinary stay on the moon.
-        </p>
-    </div>
-
-    <div class="checklist">
-        <style></style>
-        <h2>What should our passengers expect</h2>
+<div class="checklist">
+    <h3>What should our passengers expect?</h3>
+    <div class="checklist-list"> <!-- Changed the class name for clarity -->
         <ul>
-            <li><i class="fas fa-check-circle"></i> Always arrive on time          .</li>
-            <li><i class="fas fa-check-circle"></i> Guaranteed smooth flight          .</li>
-            <li><i class="fas fa-check-circle"></i> 5 star service while on board by our cabin crew             .</li>
+            <li><i class="fas fa-check-circle"></i> Always arrive on time.</li>
+            <li><i class="fas fa-check-circle"></i> Guaranteed smooth flight.</li>
+            <li><i class="fas fa-check-circle"></i> 5-star service while on board by our cabin crew.</li>
         </ul>
     </div>
+</div>
 
-
- <div class="text">
-        <h2>Ready to embark on your lunar adventure? </h2>
- </div>
-    <div class="booking">
-        <button onclick="location.href='/transportbookings'">Book Now Today</button>
-    </div>
 
     <div class="price-table">
-        <h2>Prices</h2>
+        <h5>Prices</h5>
         <table>
             <thead>
                 <tr>
@@ -356,8 +330,12 @@ li a:hover:not(.active) {
                 </tr>
             </tbody>
         </table>
-        <p class="note">Extra luggage bags are $10 each.</p>
+        <p3 class="note">Extra luggage bags are $10 each.</p3>
     </div>
+
+<div class="booking">
+        <button onclick="href='/transportbookings'">Book Now </button>
+</div>
 
 
 </body>
