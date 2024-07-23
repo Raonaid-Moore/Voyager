@@ -118,21 +118,21 @@ li a:hover, .dropdown:hover .dropbtn {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #F2F5EA;
+  background-color: #5E6CAB;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: #5E6CAB ;
+  color: #F2F5EA ;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #5E6CAB}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -140,12 +140,16 @@ li a:hover, .dropdown:hover .dropbtn {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover:not(.active) {
-  background-color: #425CCF;
+  background-color: #111;
 }
 
 .active {
   background-color: #7B4BA5;
 }
+
+.navbar-right{
+    float: right;
+    align:right;
 
 /*image on home page*/
 
@@ -482,3 +486,41 @@ footer a:hover{
   background: #DE463B;
 }
 
+/*bg on scroll*/
+
+ {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.img1 { background-image: url("img_snow.jpg"); }
+.img2 { background-image: url("img_girl.jpg"); }
+.img3 { background-image: url("img_lights.jpg"); }
+.img4 { background-image: url("img_nature.jpg"); }
+.img5 { background-image: url("img_forest.jpg"); }
+.img6 { background-image: url("img_woods.jpg"); }
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
