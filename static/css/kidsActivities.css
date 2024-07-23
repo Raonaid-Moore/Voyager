@@ -131,7 +131,7 @@ li a:hover:not(.active) {
 
 .card-item h3 {
     color: #000;
-    font-size: 1.438rem;
+    font-size: 20px;
     margin-top: 28px;
     font-weight: 600;
 }
