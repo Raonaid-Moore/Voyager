@@ -9,7 +9,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
     body {
-        background: linear-gradient(to bottom, #000022, #000033, #000044);
+        background-color: #F2F5EA
         color: #F2F5EA;
         font-family: 'Orbitron', sans-serif;
         background-size: cover;
@@ -24,14 +24,7 @@
         text-shadow: 0 0 10px rgba(123, 75, 165, 0.5), 0 0 20px rgba(123, 75, 165, 0.3);
         animation: glow 2s infinite alternate;
     }
-    @keyframes glow {
-        0% {
-            text-shadow: 0 0 10px rgba(123, 75, 165, 0.5), 0 0 20px rgba(123, 75, 165, 0.3);
-        }
-        100% {
-            text-shadow: 0 0 20px rgba(123, 75, 165, 0.7), 0 0 30px rgba(123, 75, 165, 0.5), 0 0 40px rgba(123, 75, 165, 0.3);
-        }
-    }
+
     #content {
         display: flex;
         flex-wrap: wrap;
@@ -42,7 +35,7 @@
         flex: 0 1 calc(40% - 40px); /* Adjust the width to be 50% minus the margin */
         margin: 20px;
         padding: 20px;
-        background: rgba(255, 255, 255, 0.1);
+        background-color: #fffffff;
         border-radius: 10px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         box-sizing: border-box;
@@ -68,7 +61,7 @@
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .fact-content img:hover {
-        transform: scale(1.4);
+        transform: scale(1.1);
         box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
     }
     .large-img img {
@@ -111,7 +104,7 @@
         border-color: #FFD700;
     }
     a.hire:hover:before {
-        background: radial-gradient(circle, rgba(255,255,255,0.2) 10%, transparent 10.01%);
+        background: radial-gradient(circle, rgba(255,255,255,0.2) 10%, transparent 10%);
     }
     @keyframes animate {
         0% {

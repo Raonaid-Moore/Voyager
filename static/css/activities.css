@@ -71,6 +71,11 @@ li a:hover:not(.active) {
   background-color: #7B4BA5;
 }
 
+.navbar-right{
+    float: right;
+    align:right;
+}
+
  .card-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
