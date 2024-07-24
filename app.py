@@ -43,6 +43,14 @@ def about():
 def transport():
     return render_template('transport.html')
 
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
+@app.route('/register')
+def register():
+    return render_template('register.html')
+
 @app.route('/activitiesPage')
 def activitiesPage():
     print("in get activities page")
@@ -137,10 +145,6 @@ def payment():
     print("in payment")
     return render_template('payment.html')
 
-@app.route('/payment')
-def payment():
-    print("in payment")
-    return render_template('payment.html')
 
 @app.route('/booking', methods=['POST'])
 def submit_booking():
