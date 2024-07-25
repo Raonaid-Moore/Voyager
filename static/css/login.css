@@ -15,6 +15,7 @@ form {
     border-radius: 66px;
     box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 700px;
 
 }
 
@@ -55,6 +56,10 @@ margin: 0 auto;
     max-width: auto;
     width: 100%;
     box-sizing: border-box;
+    position: relative;
+    padding:auto;
+    margin:auto;
+    text-align:centre;
     /*text-align: center;*/
     }
 
@@ -62,6 +67,7 @@ form {
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 700px
 }
 
 label {
@@ -167,5 +173,15 @@ li a:hover:not(.active) {
 .navbar-right{
     float: right;
     align:right;
+}
+
+button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button-container input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
 }
 

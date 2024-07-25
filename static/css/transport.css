@@ -136,7 +136,8 @@ font-size: 30px;
     font-size: 30px;
     font-weight: 600;
     text-align: left;
-    color: #7B4BA5
+    color: #7B4BA5;
+    background-color: #F2F5EA
 }
 
 
@@ -145,6 +146,7 @@ font-size: 30px;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+    background-color: #F2F5EA
 }
 
 
@@ -153,14 +155,16 @@ font-size: 30px;
     padding: 0;
     margin: 0;
     width: 100%;
+    background-color: #F2F5EA
 }
 
 
 .checklist li {
     display: flex;
     align-items: center;
-    margin: 10px 0;
+    margin: 40px ;
     width: 100%;
+    background-color: white
 }
 
 

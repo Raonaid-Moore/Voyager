@@ -108,6 +108,10 @@ input[type="submit"]:hover {
     text-align: center;
 }
 
+.hire {
+    text-align:center;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -174,3 +178,14 @@ li a:hover:not(.active) {
     float: right;
     align:right;
 }
+
+button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button-container input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
